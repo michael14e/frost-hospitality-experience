@@ -1,5 +1,10 @@
+
 import { Users, MessageSquare, FileText, Building, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+
 const BusinessProcess = () => {
+  const navigate = useNavigate();
+  
   const processes = [{
     icon: Users,
     title: "Build Relationships",
@@ -17,6 +22,11 @@ const BusinessProcess = () => {
     title: "Onboard Vendor",
     description: "Facilitate smooth transition and integration. Begin collaborative work on agreed-upon terms."
   }];
+
+  const handleExperiencesClick = () => {
+    navigate('/experiences');
+  };
+
   return <section className="py-20 bg-cyan-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
@@ -43,13 +53,17 @@ const BusinessProcess = () => {
             </div>)}
 
           {/* CTA Card */}
-          <div className="rounded-lg p-6 text-white relative overflow-hidden" style={{
-          backgroundImage: 'url(/lovable-uploads/dc1ec2dc-e200-42d5-9fea-d31f8580ec2c.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}>
-            <div className="absolute top-4 right-4">
+          <div 
+            className="rounded-lg p-6 text-white relative overflow-hidden cursor-pointer transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-cyan-500/20 active:scale-95 active:shadow-lg transform hover:-translate-y-1" 
+            style={{
+              backgroundImage: 'url(/lovable-uploads/dc1ec2dc-e200-42d5-9fea-d31f8580ec2c.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+            onClick={handleExperiencesClick}
+          >
+            <div className="absolute top-4 right-4 transition-transform duration-300 group-hover:translate-x-1">
               <ArrowRight className="w-6 h-6" />
             </div>
             <h3 className="text-lg font-bold mb-4 leading-tight">
@@ -65,4 +79,5 @@ const BusinessProcess = () => {
       </div>
     </section>;
 };
+
 export default BusinessProcess;
