@@ -103,11 +103,7 @@ const Experiences = () => {
               {/* Right side - Content */}
               <div>
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 text-blue-500 mr-4">
-                    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-                      <path d="M12 2L13.09 8.26L18 7L14.74 12L18 17L13.09 15.74L12 22L10.91 15.74L6 17L9.26 12L6 7L10.91 8.26L12 2Z" />
-                    </svg>
-                  </div>
+                  
                   <h2 className="text-3xl font-bold text-gray-900">Standard Experience Package</h2>
                 </div>
                 <p className="text-gray-600 mb-8">Every package is modeled to your community.</p>
