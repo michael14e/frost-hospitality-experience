@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Snowflake } from 'lucide-react';
+
 const Experiences = () => {
   const lifestyleServices = [{
     icon: "/lovable-uploads/53abc9e2-8052-4f91-b260-704e154ecec6.png",
@@ -153,7 +154,12 @@ const Experiences = () => {
         </section>
 
         {/* Business Process Section */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white" style={{
+          backgroundImage: 'url(/lovable-uploads/e36ae1a3-0a48-4898-b5b5-a40f0adcc456.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -206,4 +212,5 @@ const Experiences = () => {
       <Footer />
     </div>;
 };
+
 export default Experiences;
