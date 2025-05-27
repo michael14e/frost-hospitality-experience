@@ -4,7 +4,6 @@ import Footer from '@/components/Footer';
 import JobApplicationModal from '@/components/JobApplicationModal';
 import ConnectWithUs from '@/components/about/ConnectWithUs';
 import { MapPin, Clock, DollarSign } from 'lucide-react';
-
 const Careers = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const jobOpening = {
@@ -15,8 +14,7 @@ const Careers = () => {
     description: "We're looking for a dedicated and personable Concierge to join our team."
   };
   const benefits = ["Comprehensive health insurance", "Dental and vision coverage", "401(k) with company match", "Paid time off and holidays", "Professional development opportunities", "Flexible work arrangements", "Employee wellness programs", "Career advancement opportunities"];
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       <main className="pt-16 py-0">
@@ -65,14 +63,7 @@ const Careers = () => {
               </div>
             </div>
 
-            <div className="text-center mt-12">
-              <p className="text-lg text-gray-600 mb-6">
-                Don't see a position that fits? We're always looking for talented individuals to join our team.
-              </p>
-              <button className="bg-blue-400 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-500 transition-colors">
-                Send Us Your Resume
-              </button>
-            </div>
+            
           </div>
         </section>
       </main>
@@ -80,13 +71,7 @@ const Careers = () => {
       <ConnectWithUs />
       <Footer />
       
-      <JobApplicationModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        jobTitle={jobOpening.title} 
-      />
-    </div>
-  );
+      <JobApplicationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} jobTitle={jobOpening.title} />
+    </div>;
 };
-
 export default Careers;
