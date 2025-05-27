@@ -20,7 +20,8 @@ const About = () => {
       <OurVision />
       <WhyChooseFrost />
       <InstagramSection />
-      <TeamMembers />
+      {/* Hidden for now */}
+      {/* <TeamMembers /> */}
       <ConnectWithUs />
       <Footer />
     </div>

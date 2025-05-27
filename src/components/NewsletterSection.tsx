@@ -1,4 +1,26 @@
+import { useState } from 'react';
+import { toast } from 'sonner';
+
 const NewsletterSection = () => {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Here you would typically send the email to your backend
+    console.log('Newsletter subscription:', email);
+    
+    // Show success toast
+    toast('Newsletter subscription successful!', {
+      description: 'Thank you for subscribing to our newsletter.',
+      position: 'bottom-right',
+      duration: 3000,
+    });
+    
+    // Reset form
+    setEmail('');
+  };
+
   return <section className="py-0 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Newsletter Section */}
@@ -19,12 +41,22 @@ const NewsletterSection = () => {
             </div>
             
             <div className="flex-shrink-0 w-full lg:w-auto">
-              <div className="flex flex-col sm:flex-row">
-                <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-2 border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent w-full sm:w-80 mb-2 sm:mb-0" />
-                <button className="bg-gray-800 text-white px-6 py-2 rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-gray-700 transition-colors">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 px-4 py-2 border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent w-full sm:w-80 mb-2 sm:mb-0" 
+                  required
+                />
+                <button 
+                  type="submit"
+                  className="bg-gray-800 text-white px-6 py-2 rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-gray-700 transition-colors"
+                >
                   Subscribe
                 </button>
-              </div>
+              </form>
               <p className="text-xs text-gray-500 mt-2">
                 We care about your data in our privacy policy.
               </p>
