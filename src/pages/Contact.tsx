@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
+      <section className="py-20 bg-cover bg-center bg-no-repeat text-center" style={{
         backgroundImage: 'url(/lovable-uploads/5067fe7b-8ed7-49ea-8ad6-19033bcf23b2.png)'
       }}>
         {/* Contact Info Badge */}
