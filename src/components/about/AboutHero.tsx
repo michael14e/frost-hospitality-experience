@@ -1,19 +1,37 @@
+
 const AboutHero = () => {
-  return <section className="relative">
-      <div className="absolute top-8 left-8 z-10">
+  return (
+    <section className="relative bg-gray-50 py-20">
+      {/* Decorative elements on the sides */}
+      <div className="absolute left-0 top-0 w-32 h-full opacity-20">
+        <div className="text-blue-300 text-8xl font-bold transform -rotate-12 mt-20">
+          FROST
+        </div>
+      </div>
+      <div className="absolute right-0 top-0 w-32 h-full opacity-20">
+        <div className="text-blue-300 text-8xl font-bold transform rotate-12 mt-20">
+          FROST
+        </div>
+      </div>
+      
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading text at the top */}
+        <div className="text-center mb-12">
+          <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-4">All About</h1>
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Frost Hospitality Experience</h2>
+        </div>
         
-      </div>
-      <div className="relative h-96 bg-gradient-to-br from-blue-50 to-white overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="/lovable-uploads/85bdcafe-b6d0-466d-87b7-026a97009eec.png" alt="Modern building" className="w-full h-full object-cover" />
-        </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-          <div className="text-center w-full">
-            <h1 className="text-5xl font-bold text-gray-900 mb-4">All About</h1>
-            <h2 className="text-4xl font-bold text-gray-900">Frost Hospitality Experience</h2>
-          </div>
+        {/* Image below the heading */}
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src="/lovable-uploads/6e6bf168-ab2e-4e9f-be8d-0c57383db95d.png" 
+            alt="Modern glass buildings with blue sky" 
+            className="w-full h-auto object-cover"
+          />
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default AboutHero;
