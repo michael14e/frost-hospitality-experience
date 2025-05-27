@@ -1,5 +1,8 @@
+
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { Snowflake } from 'lucide-react';
+
 const Experiences = () => {
   const lifestyleServices = [{
     icon: "👥",
@@ -47,6 +50,7 @@ const Experiences = () => {
     title: "Onboard Vendor",
     description: "Facilitate smooth transition and integration. Begin collaborative work on agreed-upon terms with ongoing support."
   }];
+
   return <div className="min-h-screen bg-gray-50">
       <Navigation />
       
@@ -107,9 +111,7 @@ const Experiences = () => {
                 <div className="space-y-4">
                   {["Handling prospective residents", "Package management", "Checking in vendors", "Assisting maintenance request", "Tidying up coffee/tea bar", "Amenity upkeep and management", "Upholding the Overall well-being of the community", "Assisting with the everyday needs of our wonderful residents"].map((service, index) => <div key={index} className="flex items-start space-x-3">
                       <div className="w-5 h-5 mt-0.5 text-green-500">
-                        <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-                          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <Snowflake className="w-full h-full" />
                       </div>
                       <span className="text-gray-700">{service}</span>
                     </div>)}
