@@ -1,18 +1,15 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
 import ConnectWithUs from '@/components/about/ConnectWithUs';
 import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
-
 const Contact = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: 'url(/lovable-uploads/5067fe7b-8ed7-49ea-8ad6-19033bcf23b2.png)'
-      }}>
+      backgroundImage: 'url(/lovable-uploads/5067fe7b-8ed7-49ea-8ad6-19033bcf23b2.png)'
+    }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Contact Info Badge */}
           <div className="inline-block mb-8">
@@ -74,8 +71,8 @@ const Contact = () => {
       </section>
 
       <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: 'url(/lovable-uploads/c4445486-d6a2-47bc-95cf-d330aa78d1de.png)'
-      }}>
+      backgroundImage: 'url(/lovable-uploads/c4445486-d6a2-47bc-95cf-d330aa78d1de.png)'
+    }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
@@ -136,7 +133,7 @@ const Contact = () => {
                   <textarea id="message" name="message" rows={6} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"></textarea>
                 </div>
 
-                <button type="submit" className="w-full bg-blue-400 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-500 transition-colors">
+                <button type="submit" className="w-full text-white px-6 py-3 rounded-lg font-medium transition-colors bg-sky-500 hover:bg-sky-400">
                   Send Message
                 </button>
               </form>
@@ -148,8 +145,6 @@ const Contact = () => {
       <FAQSection />
       <ConnectWithUs />
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
