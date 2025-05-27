@@ -1,3 +1,4 @@
+
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AboutHero from '@/components/about/AboutHero';
@@ -7,11 +8,13 @@ import WhyChooseFrost from '@/components/about/WhyChooseFrost';
 import InstagramSection from '@/components/about/InstagramSection';
 import TeamMembers from '@/components/about/TeamMembers';
 import ConnectWithUs from '@/components/about/ConnectWithUs';
+
 const About = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
       
-      <main className="pt-16 py-0">
+      <main className="pt-16">
         <AboutHero />
         <WhoWeAre />
         <OurVision />
@@ -22,6 +25,8 @@ const About = () => {
       </main>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default About;

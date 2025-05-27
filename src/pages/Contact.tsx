@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
@@ -10,7 +9,7 @@ const Contact = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <main className="pt-16 py-0">
+      <main className="pt-16">
         <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: 'url(/lovable-uploads/5067fe7b-8ed7-49ea-8ad6-19033bcf23b2.png)'
       }}>

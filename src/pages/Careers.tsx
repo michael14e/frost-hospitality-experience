@@ -22,7 +22,7 @@ const Careers = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <main className="pt-16 py-0">
+      <main className="pt-16">
         <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
           backgroundImage: 'url(/lovable-uploads/34ad03b7-cebf-42f0-b609-6dc64a0d627b.png)'
         }}>
