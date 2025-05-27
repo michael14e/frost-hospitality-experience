@@ -1,7 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Snowflake } from 'lucide-react';
-
 const Experiences = () => {
   const lifestyleServices = [{
     icon: "👥",
@@ -49,7 +48,6 @@ const Experiences = () => {
     title: "Onboard Vendor",
     description: "Facilitate smooth transition and integration. Begin collaborative work on agreed-upon terms with ongoing support."
   }];
-
   return <div className="min-h-screen bg-gray-50">
       <Navigation />
       
@@ -128,7 +126,7 @@ const Experiences = () => {
                 Lifestyle<br />
                 Team
               </h2>
-              <div className="w-16 h-1 bg-blue-500"></div>
+              <div className="w-16 h-1 bg-cyan-500"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
