@@ -3,37 +3,37 @@ import Footer from '@/components/Footer';
 import { Snowflake } from 'lucide-react';
 const Experiences = () => {
   const lifestyleServices = [{
-    icon: "👥",
-    title: "Handling Prospective residents",
-    description: "Guide prospects to understand us better, provide facts for more informed decisions about community and housing options"
+    icon: "📋",
+    title: "Handling Prospective Residents",
+    description: "Explore available residences, schedule tours, and receive personalized assistance throughout your application process."
   }, {
     icon: "📦",
     title: "Package Management",
-    description: "Organized delivery coordination, secure package handling, timely resident notifications for all incoming deliveries"
+    description: "Ensures that your deliveries are securely received and easily accessible. Enjoy convenient notifications, secure storage, and hassle-free pickup, making package retrieval a breeze."
   }, {
     icon: "✅",
     title: "Checking in vendors",
-    description: "Professional vendor coordination, access management, work supervision to ensure quality service delivery"
+    description: "Ensures quick and secure check-in for all vendors, enhancing efficiency and fostering positive partnerships."
   }, {
     icon: "🔧",
     title: "Assisting maintenance request",
-    description: "Prompt maintenance coordination, issue documentation, follow-up communication for timely resolution"
+    description: "Promptly address all your maintenance needs. Submit requests easily and receive timely updates, ensuring your home stays comfortable."
   }, {
     icon: "☕",
     title: "Tidying up coffee/tea bar",
-    description: "Regular amenity maintenance, supply restocking, cleanliness standards for optimal resident experience"
+    description: "Ensure a clean and inviting coffee and tea bar, ready to serve you. Enjoy a tidy space with fresh supplies and a welcoming atmosphere."
   }, {
     icon: "🏢",
     title: "Amenity upkeep and management",
-    description: "Comprehensive facility oversight, equipment maintenance, space optimization for community enjoyment"
+    description: "We prioritize the maintenance and management of amenities. Enjoy a well-kept environment that enhances your living experience."
   }, {
     icon: "⭐",
     title: "Upholding the Overall well-being of the community",
-    description: "Community wellness initiatives, resident engagement programs, positive environment cultivation"
+    description: "Dedicated to fostering a healthy, vibrant community through supportive programs, resources, and events."
   }, {
-    icon: "❤️",
+    icon: "🤝",
     title: "Assisting with the everyday needs of our residents",
-    description: "Personal assistance coordination, daily living support, responsive service for enhanced comfort and convenience"
+    description: "Committed to meeting the daily needs of our residents with friendly support and helpful resources, ensuring a comfortable and enjoyable living experience."
   }];
   const businessProcesses = [{
     title: "Build Relationships",
@@ -121,23 +121,25 @@ const Experiences = () => {
         {/* Lifestyle Team Section */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Lifestyle<br />
-                Team
-              </h2>
-              <div className="w-16 h-1 bg-cyan-500"></div>
-            </div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {lifestyleServices.map((service, index) => <div key={index} className="bg-gradient-to-br from-blue-400 to-blue-500 text-white p-6 rounded-lg">
-                  <div className="flex items-center mb-4">
-                    <div className="w-8 h-8 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-3">
-                      <span className="text-2xl">{service.icon}</span>
+              {/* Header Card */}
+              <div className="flex flex-col justify-center">
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                  Lifestyle<br />
+                  Team
+                </h2>
+                <div className="w-16 h-1 bg-cyan-500"></div>
+              </div>
+
+              {/* Service Cards */}
+              {lifestyleServices.map((service, index) => <div key={index} className="bg-gradient-to-br from-cyan-400 to-cyan-500 text-white p-6 rounded-lg">
+                  <div className="flex items-start mb-4">
+                    <div className="w-8 h-8 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                      <span className="text-xl">{service.icon}</span>
                     </div>
-                    <h3 className="text-lg font-semibold">{service.title}</h3>
+                    <h3 className="text-lg font-semibold leading-tight">{service.title}</h3>
                   </div>
-                  <p className="text-blue-100 text-sm leading-relaxed">
+                  <p className="text-cyan-50 text-sm leading-relaxed">
                     {service.description}
                   </p>
                 </div>)}
