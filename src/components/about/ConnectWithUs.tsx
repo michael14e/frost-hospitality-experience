@@ -9,7 +9,7 @@ const ConnectWithUs = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Connect with us!</h2>
             <p className="text-lg text-gray-600 mb-8">Have questions or need assistance? Reach out to us— 
 We're here to help!</p>
-            <button className="bg-blue-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors">
+            <button className="text-white px-8 py-3 rounded-lg font-medium transition-colors bg-sky-500 hover:bg-sky-400">
               Contact Us
             </button>
           </div>
