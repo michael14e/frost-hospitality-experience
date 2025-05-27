@@ -34,9 +34,7 @@ const ServicesSection = () => {
 
           {/* Right side - Image */}
           <div className="relative">
-            <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&crop=center" alt="Modern apartment interior" className="w-full h-full object-cover" />
-            </div>
+            
           </div>
         </div>
       </div>
