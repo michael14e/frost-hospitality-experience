@@ -37,17 +37,29 @@ const Experiences = () => {
     description: "Committed to meeting the daily needs of our residents with friendly support and helpful resources, ensuring a comfortable and enjoyable living experience."
   }];
   const businessProcesses = [{
+    number: "01",
     title: "Build Relationships",
-    description: "Initiate contact with property management. Build rapport and understand their needs and expectations to create meaningful partnerships."
+    description: "Initiate contact with property management. Establish a reliable partnership with stakeholders to ensure smooth operations, and create a welcoming and trustworthy environment to encourage repeat business and build rapport and understand their needs.",
+    image: "/lovable-uploads/29ab8710-7f56-4ba2-ab16-9d5131fd55c8.png",
+    imagePosition: "right"
   }, {
+    number: "02",
     title: "Negotiate Agreement",
-    description: "Discuss terms, pricing, and services offered. Reach consensus on contractual details ensuring mutual benefit and satisfaction."
+    description: "Reaching optimal terms, pricing, and services offered and establish agreements that ensure reliable service delivery and contribute to a superior partner experience while maintaining cost efficiency and operational effectiveness.",
+    image: "/lovable-uploads/29ab8710-7f56-4ba2-ab16-9d5131fd55c8.png",
+    imagePosition: "left"
   }, {
+    number: "03",
     title: "Sign Contract",
-    description: "Formalize agreement in a legally binding contract. Ensure all parties are satisfied with terms and conditions."
+    description: "Formalize agreement in a legally binding contract. It signifies the commitment between parties to deliver agreed-upon services and products. This formalizes the legal framework for the partnership, detailing pricing, timelines, responsibilities, and service standards and ensure all parties are satisfied with terms.",
+    image: "/lovable-uploads/29ab8710-7f56-4ba2-ab16-9d5131fd55c8.png",
+    imagePosition: "right"
   }, {
+    number: "04",
     title: "Onboard Vendor",
-    description: "Facilitate smooth transition and integration. Begin collaborative work on agreed-upon terms with ongoing support."
+    description: "Essential for building effective partnerships that enhance service delivery. Facilitate smooth transition and integration. Begin collaborative work on agreed-upon terms.",
+    image: "/lovable-uploads/29ab8710-7f56-4ba2-ab16-9d5131fd55c8.png",
+    imagePosition: "left"
   }];
   return <div className="min-h-screen bg-gray-50">
       <Navigation />
@@ -168,42 +180,60 @@ const Experiences = () => {
               <div className="w-16 h-1 bg-cyan-500"></div>
             </div>
 
-            <div className="space-y-16">
-              {businessProcesses.map((process, index) => <div key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  {index % 2 === 0 ? <>
-                      <div className="relative">
-                        <div className="aspect-[4/3] bg-gray-100 rounded-lg flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                              <span className="text-white text-2xl font-bold">{String(index + 1).padStart(2, '0')}</span>
-                            </div>
-                            <div className="text-6xl mb-4">👥</div>
+            <div className="space-y-24">
+              {businessProcesses.map((process, index) => (
+                <div key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  {process.imagePosition === "right" ? (
+                    <>
+                      {/* Text Content - Left Side */}
+                      <div className="order-1 lg:order-1">
+                        <div className="flex items-center mb-6">
+                          <div className="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mr-4">
+                            <span className="text-white text-lg font-bold">{process.number}</span>
                           </div>
+                          <h3 className="text-3xl font-bold text-gray-900">{process.title}</h3>
+                        </div>
+                        <p className="text-gray-600 leading-relaxed text-lg">{process.description}</p>
+                      </div>
+                      
+                      {/* Image - Right Side */}
+                      <div className="order-2 lg:order-2">
+                        <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
+                          <img 
+                            src={process.image} 
+                            alt={process.title}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                       </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">{process.title}</h3>
-                        <p className="text-gray-600 leading-relaxed">{process.description}</p>
-                      </div>
-                    </> : <>
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">{process.title}</h3>
-                        <p className="text-gray-600 leading-relaxed">{process.description}</p>
-                      </div>
-                      <div className="relative">
-                        <div className="aspect-[4/3] bg-gray-100 rounded-lg flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                              <span className="text-white text-2xl font-bold">{String(index + 1).padStart(2, '0')}</span>
-                            </div>
-                            <div className="text-6xl mb-4">
-                              {index === 1 ? '🤝' : index === 2 ? '📝' : '🏢'}
-                            </div>
-                          </div>
+                    </>
+                  ) : (
+                    <>
+                      {/* Image - Left Side */}
+                      <div className="order-2 lg:order-1">
+                        <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
+                          <img 
+                            src={process.image} 
+                            alt={process.title}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                       </div>
-                    </>}
-                </div>)}
+                      
+                      {/* Text Content - Right Side */}
+                      <div className="order-1 lg:order-2">
+                        <div className="flex items-center mb-6">
+                          <div className="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mr-4">
+                            <span className="text-white text-lg font-bold">{process.number}</span>
+                          </div>
+                          <h3 className="text-3xl font-bold text-gray-900">{process.title}</h3>
+                        </div>
+                        <p className="text-gray-600 leading-relaxed text-lg">{process.description}</p>
+                      </div>
+                    </>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </section>
