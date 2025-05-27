@@ -1,3 +1,4 @@
+
 import { Phone, MessageCircle, Mail } from 'lucide-react';
 const Footer = () => {
   return <footer className="pt-24 pb-8 relative overflow-hidden bg-white">
@@ -46,7 +47,12 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Section */}
-        <div className="bg-white rounded-lg p-8 mb-16">
+        <div className="rounded-lg p-8 mb-16 relative overflow-hidden" style={{
+          backgroundImage: 'url(/lovable-uploads/c9020f5c-be55-4fae-8f7a-078172edeec4.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}>
           <div className="max-w-md">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Sign up for our newsletter
