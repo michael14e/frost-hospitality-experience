@@ -1,7 +1,15 @@
 const ServicesSection = () => {
   const services = ["Handling prospective residents", "Package management", "Checking in vendors", "Assisting maintenance request", "Tidying up coffee/tea bar", "Amenity upkeep and management", "Upholding the Overall well-being of the community", "Assisting with the everyday needs of our wonderful residents"];
-  return <section className="py-20 bg-gradient-to-r from-blue-400 to-blue-500 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  return <section className="py-20 relative overflow-hidden" style={{
+    backgroundImage: 'url(/lovable-uploads/54822b8c-0a8d-448d-b67f-e8fbbb5a76bf.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}>
+      {/* Semi-transparent overlay for better text readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Services */}
           <div className="bg-white rounded-lg p-8 shadow-lg">
