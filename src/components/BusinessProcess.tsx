@@ -54,7 +54,15 @@ const BusinessProcess = () => {
           ))}
 
           {/* CTA Card */}
-          <div className="bg-cyan-500 rounded-lg p-6 text-white relative overflow-hidden">
+          <div 
+            className="rounded-lg p-6 text-white relative overflow-hidden"
+            style={{
+              backgroundImage: 'url(/lovable-uploads/dc1ec2dc-e200-42d5-9fea-d31f8580ec2c.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
             <div className="absolute top-4 right-4">
               <ArrowRight className="w-6 h-6" />
             </div>
