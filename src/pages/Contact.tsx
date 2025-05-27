@@ -1,19 +1,14 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
-
 const Contact = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       <main className="pt-16 py-0">
-        <section 
-          className="py-20 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/lovable-uploads/5067fe7b-8ed7-49ea-8ad6-19033bcf23b2.png)'
-          }}
-        >
+        <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: 'url(/lovable-uploads/5067fe7b-8ed7-49ea-8ad6-19033bcf23b2.png)'
+      }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {/* Contact Info Badge */}
             <div className="inline-block mb-8">
@@ -74,12 +69,9 @@ const Contact = () => {
           </div>
         </section>
 
-        <section 
-          className="py-20 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/lovable-uploads/c4445486-d6a2-47bc-95cf-d330aa78d1de.png)'
-          }}
-        >
+        <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: 'url(/lovable-uploads/c4445486-d6a2-47bc-95cf-d330aa78d1de.png)'
+      }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Information */}
@@ -92,46 +84,7 @@ const Contact = () => {
                   </p>
                 </div>
 
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <Phone className="w-6 h-6 text-blue-400 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                      <p className="text-gray-600">757-800-5289</p>
-                      <p className="text-sm text-gray-500">Monday - Friday, 9:00 AM - 6:00 PM EST</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <MessageCircle className="w-6 h-6 text-blue-400 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                      <p className="text-gray-600">hi@frostlifestyle.com</p>
-                      <p className="text-sm text-gray-500">We typically respond within 24 hours</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <MapPin className="w-6 h-6 text-blue-400 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Office</h3>
-                      <p className="text-gray-600">Virginia Beach, VA</p>
-                      <p className="text-sm text-gray-500">Serving properties nationwide</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <Clock className="w-6 h-6 text-blue-400 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
-                      <div className="text-gray-600 space-y-1">
-                        <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
-                        <p>Saturday: 10:00 AM - 4:00 PM EST</p>
-                        <p>Sunday: Closed</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
 
               {/* Contact Form */}
@@ -192,8 +145,6 @@ const Contact = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
