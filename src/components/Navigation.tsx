@@ -20,7 +20,9 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex items-center space-x-2">
-              <img src="/lovable-uploads/46b03407-4b85-45af-8054-059eaecca4a0.png" alt="Frost Hospitality Experience" className="h-8" />
+              <a href="/">
+                <img src="/lovable-uploads/46b03407-4b85-45af-8054-059eaecca4a0.png" alt="Frost Hospitality Experience" className="h-8 cursor-pointer" />
+              </a>
             </div>
           </div>
 
