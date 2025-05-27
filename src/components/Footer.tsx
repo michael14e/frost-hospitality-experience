@@ -1,5 +1,6 @@
 
-import { MessageCircle, Mail } from 'lucide-react';
+
+import { Mail } from 'lucide-react';
 const Footer = () => {
   return <footer className="pt-24 pb-8 relative overflow-hidden bg-white">
       {/* Background decorative elements */}
@@ -37,7 +38,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-start space-x-3">
-              <MessageCircle className="w-6 h-6 text-blue-400 mt-1" />
+              <img src="/lovable-uploads/6cfcd3a8-bffe-4fa1-a708-d706d36c6912.png" alt="Message" className="w-6 h-6 mt-1" />
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Message us</h3>
                 <p className="text-gray-600">fhe@frostlifestyle.com</p>
@@ -136,3 +137,4 @@ const Footer = () => {
     </footer>;
 };
 export default Footer;
+
