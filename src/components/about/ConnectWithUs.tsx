@@ -15,7 +15,7 @@ const ConnectWithUs = () => {
             </button>
           </div>
           <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=400&fit=crop&crop=center" alt="Handshake" className="w-full h-full object-cover" />
+            <img alt="Handshake" src="/lovable-uploads/d0cd10e2-c208-4071-a716-8a0d7e8c9a6e.png" className="w-full h-full object-fit" />
           </div>
         </div>
       </div>
