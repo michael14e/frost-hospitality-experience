@@ -2,7 +2,9 @@ import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import JobApplicationModal from '@/components/JobApplicationModal';
+import ConnectWithUs from '@/components/about/ConnectWithUs';
 import { MapPin, Clock, DollarSign } from 'lucide-react';
+
 const Careers = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const jobOpening = {
@@ -13,7 +15,8 @@ const Careers = () => {
     description: "We're looking for a dedicated and personable Concierge to join our team."
   };
   const benefits = ["Comprehensive health insurance", "Dental and vision coverage", "401(k) with company match", "Paid time off and holidays", "Professional development opportunities", "Flexible work arrangements", "Employee wellness programs", "Career advancement opportunities"];
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
       
       <main className="pt-16 py-0">
@@ -74,9 +77,16 @@ const Careers = () => {
         </section>
       </main>
 
+      <ConnectWithUs />
       <Footer />
       
-      <JobApplicationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} jobTitle={jobOpening.title} />
-    </div>;
+      <JobApplicationModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        jobTitle={jobOpening.title} 
+      />
+    </div>
+  );
 };
+
 export default Careers;
