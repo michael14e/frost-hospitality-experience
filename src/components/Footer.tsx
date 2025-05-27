@@ -46,12 +46,12 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Section */}
-        <div className="rounded-lg p-8 mb-16 relative overflow-hidden" style={{
-          backgroundImage: 'url(/lovable-uploads/c9020f5c-be55-4fae-8f7a-078172edeec4.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}>
+        <div style={{
+        backgroundImage: 'url(/lovable-uploads/c9020f5c-be55-4fae-8f7a-078172edeec4.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }} className="rounded-lg p-8 mb-16 relative overflow-hidden px-[40px]">
           <div className="flex items-center justify-between">
             <div className="max-w-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
