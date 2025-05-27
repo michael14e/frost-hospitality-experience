@@ -1,3 +1,4 @@
+
 const OurVision = () => {
   const visionPoints = [
     "Simplify Process",
@@ -34,28 +35,11 @@ const OurVision = () => {
           </div>
           
           <div className="flex justify-center">
-            <div className="grid grid-cols-2 gap-4 max-w-md">
-              <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&h=200&fit=crop&crop=center"
-                alt="Modern building exterior"
-                className="w-full h-32 object-cover rounded-lg"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop&crop=center"
-                alt="Business meeting"
-                className="w-full h-32 object-cover rounded-lg"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&h=200&fit=crop&crop=center"
-                alt="Office space"
-                className="w-full h-32 object-cover rounded-lg"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=300&h=200&fit=crop&crop=center"
-                alt="Modern workspace"
-                className="w-full h-32 object-cover rounded-lg"
-              />
-            </div>
+            <img 
+              src="/lovable-uploads/b522a3d6-038d-418f-b2e5-bf7535736e13.png"
+              alt="Business collage"
+              className="w-full max-w-md h-auto object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>
