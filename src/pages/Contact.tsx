@@ -1,9 +1,12 @@
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
 import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
 
 const Contact = () => {
+  useDocumentTitle('Contact Us - Frost Hospitality');
+  
   return (
     <div className="min-h-screen">
       <Navigation />

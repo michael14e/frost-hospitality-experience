@@ -1,8 +1,12 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { navigateWithScroll } from "../utils/navigation";
 
 const NotFound = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+  useDocumentTitle('Page Not Found - Frost Hospitality');
 
   useEffect(() => {
     console.error(
@@ -16,9 +20,12 @@ const NotFound = () => {
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">404</h1>
         <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
+        <div 
+          onClick={() => navigateWithScroll(navigate, '/')} 
+          className="text-blue-500 hover:text-blue-700 underline cursor-pointer"
+        >
           Return to Home
-        </a>
+        </div>
       </div>
     </div>
   );

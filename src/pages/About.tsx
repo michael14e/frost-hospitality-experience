@@ -1,4 +1,4 @@
-
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AboutHero from '@/components/about/AboutHero';
@@ -10,6 +10,8 @@ import TeamMembers from '@/components/about/TeamMembers';
 import ConnectWithUs from '@/components/about/ConnectWithUs';
 
 const About = () => {
+  useDocumentTitle('About Us - Frost Hospitality');
+  
   return (
     <div className="min-h-screen">
       <Navigation />
