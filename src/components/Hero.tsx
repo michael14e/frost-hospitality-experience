@@ -1,4 +1,3 @@
-
 const Hero = () => {
   return <section className="relative overflow-hidden" style={{
     backgroundImage: 'url(/lovable-uploads/6c0fe62b-a5df-4a99-83f9-b6b481976387.png)',
@@ -53,7 +52,7 @@ const Hero = () => {
         
         {/* Experience Section Content */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-20">
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed pt-32">
             We are here to touch the lives of everyone around us and show them<br />
             it is okay to expect the best life has to offer.
           </p>
