@@ -31,7 +31,7 @@ const Contact = () => {
               {/* 24/7 Service Card */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <Phone className="w-8 h-8 text-blue-400" />
+                  <img src="/lovable-uploads/f8199ec8-6175-47bf-9ecb-d6b1c9dad58c.png" alt="Phone" className="w-8 h-8" />
                 </div>
                 <h3 className="text-gray-900 font-semibold mb-2">24/7 Service</h3>
                 <p className="text-blue-400 font-medium mb-4">Call us on</p>
@@ -44,7 +44,7 @@ const Contact = () => {
               {/* Drop a mail Card */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <MessageCircle className="w-8 h-8 text-blue-400" />
+                  <img src="/lovable-uploads/0654d768-e8d1-4f1a-95c1-1908bd0e4f31.png" alt="Email" className="w-8 h-8" />
                 </div>
                 <h3 className="text-gray-900 font-semibold mb-2">Drop a mail</h3>
                 <p className="text-blue-400 font-medium mb-4">Mail Address</p>
@@ -57,7 +57,7 @@ const Contact = () => {
               {/* Office Hours Card */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <Clock className="w-8 h-8 text-blue-400" />
+                  <img src="/lovable-uploads/dbbb9b6a-fac0-4135-a052-4bdd3fafe55d.png" alt="Clock" className="w-8 h-8" />
                 </div>
                 <h3 className="text-gray-900 font-semibold mb-2">Office Hours</h3>
                 <p className="text-blue-400 font-medium mb-4">Opening Time</p>
