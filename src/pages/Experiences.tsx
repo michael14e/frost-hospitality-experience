@@ -89,7 +89,7 @@ const Experiences = () => {
                   
                 </div>
                 <div className="rounded-lg overflow-hidden bg-transparent">
-                  <img alt="Professional hospitality service" src="/lovable-uploads/049650ea-9361-4265-ade9-bba699f90598.png" className="w-80 h-full object-contain" />
+                  <img alt="Professional hospitality service" src="/lovable-uploads/049650ea-9361-4265-ade9-bba699f90598.png" className="w-full h-full object-contain" />
                 </div>
                 <div className="absolute -bottom-8 -right-8 w-16 h-16 text-blue-400 opacity-30">
                   
