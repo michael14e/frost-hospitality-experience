@@ -91,7 +91,7 @@ const Experiences = () => {
                   </svg>
                 </div>
                 <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <img src="/lovable-uploads/7a001561-348d-40d1-aac5-2f29c7494779.png" alt="Professional hospitality service" className="w-full h-full object-cover" />
+                  <img alt="Professional hospitality service" src="/lovable-uploads/049650ea-9361-4265-ade9-bba699f90598.png" className="w-80 h-full object-contain" />
                 </div>
                 <div className="absolute -bottom-8 -right-8 w-16 h-16 text-blue-400 opacity-30">
                   <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
