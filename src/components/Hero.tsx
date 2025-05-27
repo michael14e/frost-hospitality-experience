@@ -1,4 +1,3 @@
-
 const Hero = () => {
   return <section className="relative overflow-hidden" style={{
     backgroundImage: 'url(/lovable-uploads/98b70d22-72a6-4ebe-985d-1d71b804753e.png)',
@@ -58,7 +57,7 @@ const Hero = () => {
             it is okay to expect the best life has to offer.
           </p>
           
-          <h2 className="text-4xl lg:text-5xl font-bold text-blue-400 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-cyan-500">
             Experiences make memories and memories last a lifetime.
           </h2>
         </div>
