@@ -33,7 +33,7 @@ const ExperiencesBusinessProcess = () => {
 
   return (
     <section className="py-20 bg-white" style={{
-      backgroundImage: 'url(/lovable-uploads/fe5849de-081b-445b-8e8a-da35e273e358.png)',
+      backgroundImage: 'url(/lovable-uploads/20067ff7-78b8-475e-9c7d-725ebb063d88.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
