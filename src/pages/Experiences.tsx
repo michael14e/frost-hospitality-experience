@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Snowflake } from 'lucide-react';
@@ -110,7 +109,7 @@ const Experiences = () => {
                 
                 <div className="space-y-4">
                   {["Handling prospective residents", "Package management", "Checking in vendors", "Assisting maintenance request", "Tidying up coffee/tea bar", "Amenity upkeep and management", "Upholding the Overall well-being of the community", "Assisting with the everyday needs of our wonderful residents"].map((service, index) => <div key={index} className="flex items-start space-x-3">
-                      <div className="w-5 h-5 mt-0.5 text-green-500">
+                      <div className="w-5 h-5 mt-0.5 text-sky-500">
                         <Snowflake className="w-full h-full" />
                       </div>
                       <span className="text-gray-700">{service}</span>
