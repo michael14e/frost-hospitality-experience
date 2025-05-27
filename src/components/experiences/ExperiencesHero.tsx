@@ -1,5 +1,13 @@
 
+import { useNavigate } from 'react-router-dom';
+
 const ExperiencesHero = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <section className="py-20 overflow-hidden" style={{
       backgroundImage: 'url(/lovable-uploads/b2edc674-2040-471a-a14e-fa728cbeb7a7.png)',
@@ -14,7 +22,10 @@ const ExperiencesHero = () => {
           We stand apart by focusing on personalized concierge experiences tailored to each residential 
           property needs. Discover how our services complement and enhance a customer service.
         </p>
-        <button className="text-white px-8 py-3 rounded-lg font-medium transition-colors bg-sky-500 hover:bg-sky-400">
+        <button 
+          onClick={handleContactClick}
+          className="text-white px-8 py-3 rounded-lg font-medium transition-colors bg-sky-500 hover:bg-sky-400"
+        >
           Contact Us
         </button>
       </div>
