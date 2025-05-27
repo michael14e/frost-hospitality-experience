@@ -1,33 +1,35 @@
-
 import React, { useState } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { X, Upload } from 'lucide-react';
-
 interface JobApplicationModalProps {
   isOpen: boolean;
   onClose: () => void;
   jobTitle: string;
 }
-
-const JobApplicationModal = ({ isOpen, onClose, jobTitle }: JobApplicationModalProps) => {
+const JobApplicationModal = ({
+  isOpen,
+  onClose,
+  jobTitle
+}: JobApplicationModalProps) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
     resume: null as File | null
   });
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
+    const {
+      name,
+      value
+    } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
-
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0] || null;
     setFormData(prev => ({
@@ -35,16 +37,13 @@ const JobApplicationModal = ({ isOpen, onClose, jobTitle }: JobApplicationModalP
       resume: file
     }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     // Handle form submission here
     onClose();
   };
-
-  return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
+  return <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0">
         <div className="flex">
           {/* Left side - Job Details */}
@@ -53,7 +52,7 @@ const JobApplicationModal = ({ isOpen, onClose, jobTitle }: JobApplicationModalP
               <div>
                 <h2 className="text-2xl font-bold text-gray-900">{jobTitle}</h2>
                 <div className="flex items-center gap-4 mt-2">
-                  <span className="inline-block bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="inline-block bg-sky-100 text-sky-600 px-3 py-1 rounded-full text-sm font-medium">
                     • Customer Service
                   </span>
                   <span className="flex items-center text-gray-600 text-sm">
@@ -63,12 +62,7 @@ const JobApplicationModal = ({ isOpen, onClose, jobTitle }: JobApplicationModalP
                   <span className="text-gray-600 text-sm">Austin, Texas</span>
                 </div>
               </div>
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={onClose}
-                className="text-gray-400 hover:text-gray-600"
-              >
+              <Button variant="ghost" size="icon" onClick={onClose} className="text-gray-400 hover:text-gray-600">
                 <X className="h-6 w-6" />
               </Button>
             </div>
@@ -128,77 +122,39 @@ const JobApplicationModal = ({ isOpen, onClose, jobTitle }: JobApplicationModalP
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="name" className="text-gray-700 font-medium mb-2 block">Name</Label>
-                <Input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  placeholder="Enter your name"
-                  className="w-full"
-                  required
-                />
+                <Input id="name" name="name" value={formData.name} onChange={handleInputChange} placeholder="Enter your name" className="w-full" required />
               </div>
 
               <div>
                 <Label htmlFor="email" className="text-gray-700 font-medium mb-2 block">E-mail Address</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  placeholder="Enter your email"
-                  className="w-full"
-                  required
-                />
+                <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="Enter your email" className="w-full" required />
               </div>
 
               <div>
                 <Label htmlFor="message" className="text-gray-700 font-medium mb-2 block">Message</Label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  placeholder="Enter a description..."
-                  rows={4}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                />
+                <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Enter a description..." rows={4} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" />
               </div>
 
               <div>
                 <Label htmlFor="resume" className="text-gray-700 font-medium mb-2 block">Resume</Label>
                 <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 transition-colors">
-                  <input
-                    id="resume"
-                    type="file"
-                    onChange={handleFileChange}
-                    accept=".pdf,.doc,.docx"
-                    className="hidden"
-                  />
+                  <input id="resume" type="file" onChange={handleFileChange} accept=".pdf,.doc,.docx" className="hidden" />
                   <label htmlFor="resume" className="cursor-pointer">
                     <Upload className="w-6 h-6 text-blue-500 mx-auto mb-2" />
                     <p className="text-blue-500 font-medium">Browse or drag and drop</p>
                     <p className="text-xs text-gray-500 mt-1">Max. file size: 4mb (pdf, doc, docx)</p>
                   </label>
-                  {formData.resume && (
-                    <p className="mt-2 text-sm text-gray-600">Selected: {formData.resume.name}</p>
-                  )}
+                  {formData.resume && <p className="mt-2 text-sm text-gray-600">Selected: {formData.resume.name}</p>}
                 </div>
               </div>
 
-              <Button 
-                type="submit" 
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-medium"
-              >
+              <Button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-medium">
                 Submit
               </Button>
             </form>
           </div>
         </div>
       </DialogContent>
-    </Dialog>
-  );
+    </Dialog>;
 };
-
 export default JobApplicationModal;
