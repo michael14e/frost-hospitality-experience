@@ -57,9 +57,8 @@ const Hero = () => {
             it is okay to expect the best life has to offer.
           </p>
           
-          <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-cyan-500">
-            Experiences make memories and memories last a lifetime.
-          </h2>
+          <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-cyan-500">Experiences make memories and memories 
+last a lifetime.</h2>
         </div>
       </div>
     </section>;
