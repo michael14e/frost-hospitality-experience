@@ -1,5 +1,7 @@
 const WhoWeAre = () => {
-  return <section className="py-20 bg-gray-50">
+  return <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
+    backgroundImage: `url('/lovable-uploads/81ce20a7-2848-4784-bf9e-fb828f027f68.png')`
+  }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl">
           <div className="mb-8">
