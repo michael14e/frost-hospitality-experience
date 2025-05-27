@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from '@/components/ui/card';
 
 const WhyChooseFrost = () => {
@@ -5,32 +6,32 @@ const WhyChooseFrost = () => {
     {
       title: "Experience and Trust",
       description: "Proven Track Record: Years of experience and a solid reputation in the industry.",
-      icon: "/lovable-uploads/f8c218ca-0ae5-4641-883a-7ca0de465e5a.png"
+      icon: "/lovable-uploads/d8a7b9ef-436b-47c3-b3b7-0dbbeff8974e.png"
     },
     {
       title: "Security",
       description: "Secure Transactions: We use advanced encryption to protect your personal information.",
-      icon: "/lovable-uploads/f8c218ca-0ae5-4641-883a-7ca0de465e5a.png"
+      icon: "/lovable-uploads/dd422844-c2f9-4826-bf9e-7af67afc284d.png"
     },
     {
       title: "Customization Option",
       description: "Personalized Solutions: We offer tailor-made solutions to meet your unique needs.",
-      icon: "/lovable-uploads/f8c218ca-0ae5-4641-883a-7ca0de465e5a.png"
+      icon: "/lovable-uploads/f43b6d8b-9080-4def-9d02-db80f4605364.png"
     },
     {
       title: "Experience and Trust",
       description: "High standards: Our quality control is guaranteed excellence in every product/ service.",
-      icon: "/lovable-uploads/f8c218ca-0ae5-4641-883a-7ca0de465e5a.png"
+      icon: "/lovable-uploads/eb565e67-eaf9-4c0a-96ee-072e92bee1c7.png"
     },
     {
       title: "Customer Satisfaction",
       description: "Outstanding Service: Our dedicated customer service team is here to help you every step of the way.",
-      icon: "/lovable-uploads/f8c218ca-0ae5-4641-883a-7ca0de465e5a.png"
+      icon: "/lovable-uploads/ed723cc8-0157-4fe7-a99e-4452620911d6.png"
     },
     {
       title: "Competitive Pricing",
       description: "Value for Money: We offer competitive prices without compromising on quality.",
-      icon: "/lovable-uploads/f8c218ca-0ae5-4641-883a-7ca0de465e5a.png"
+      icon: "/lovable-uploads/e4699c01-b206-4b69-8bf6-2cbcf6caf49c.png"
     }
   ];
 
