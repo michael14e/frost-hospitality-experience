@@ -1,4 +1,3 @@
-
 const Hero = () => {
   return <section className="relative overflow-hidden" style={{
     backgroundImage: 'url(/lovable-uploads/98b70d22-72a6-4ebe-985d-1d71b804753e.png)',
@@ -9,7 +8,7 @@ const Hero = () => {
   }}>
       {/* Background decorative elements */}
       <div className="absolute top-10 left-10 w-32 h-32 opacity-10">
-        <img src="/lovable-uploads/2770171d-9e4b-4d20-af50-b3c6aeb0f6f1.png" alt="Decorative element" className="w-full h-full" />
+        <img alt="Decorative element" className="w-full h-full" src="/lovable-uploads/746d6b91-a2b4-4001-b407-df50f2419f24.png" />
       </div>
       <div className="absolute bottom-10 right-10 w-24 h-24 opacity-10">
         <svg viewBox="0 0 24 24" fill="currentColor" className="text-blue-200 w-full h-full">
