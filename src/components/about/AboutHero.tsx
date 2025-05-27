@@ -1,21 +1,13 @@
-
 const AboutHero = () => {
-  return <section 
-    className="relative py-20 bg-cover bg-center bg-no-repeat"
-    style={{
-      backgroundImage: `url('/lovable-uploads/69b5b210-f9b1-48e1-9a0e-517e4feb5c6c.png')`
-    }}
-  >
+  return <section className="relative py-20 bg-cover bg-center bg-no-repeat" style={{
+    backgroundImage: `url('/lovable-uploads/69b5b210-f9b1-48e1-9a0e-517e4feb5c6c.png')`
+  }}>
       {/* Decorative elements on the sides */}
       <div className="absolute left-0 top-0 w-32 h-full opacity-20">
-        <div className="text-blue-300 text-8xl font-bold transform -rotate-12 mt-20">
-          FROST
-        </div>
+        
       </div>
       <div className="absolute right-0 top-0 w-32 h-full opacity-20">
-        <div className="text-blue-300 text-8xl font-bold transform rotate-12 mt-20">
-          FROST
-        </div>
+        
       </div>
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
