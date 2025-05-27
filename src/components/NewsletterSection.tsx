@@ -8,7 +8,7 @@ const NewsletterSection = () => {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }} className="rounded-lg p-8 relative overflow-hidden py-[4px] px-0">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between py-[32px] px-[40px]">
             <div className="max-w-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Sign up for our newsletter
