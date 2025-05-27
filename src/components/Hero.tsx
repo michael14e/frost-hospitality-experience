@@ -8,7 +8,7 @@ const Hero = () => {
   }}>
       {/* Background decorative elements */}
       <div className="absolute top-10 left-10 w-32 h-32 opacity-10">
-        <img alt="Decorative element" className="w-full h-full" src="/lovable-uploads/b3bada9c-6e70-445f-8918-7d904043c6aa.png" />
+        <img alt="Decorative element" className="w-full h-full" src="/lovable-uploads/509ebc5b-3cae-470e-b050-a6b69fb1787b.png" />
       </div>
       <div className="absolute bottom-10 right-10 w-24 h-24 opacity-10">
         <svg viewBox="0 0 24 24" fill="currentColor" className="text-blue-200 w-full h-full">
