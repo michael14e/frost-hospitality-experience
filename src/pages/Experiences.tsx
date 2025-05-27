@@ -1,6 +1,5 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-
 const Experiences = () => {
   const lifestyleServices = [{
     icon: "👥",
@@ -48,21 +47,17 @@ const Experiences = () => {
     title: "Onboard Vendor",
     description: "Facilitate smooth transition and integration. Begin collaborative work on agreed-upon terms with ongoing support."
   }];
-  return (
-    <div className="min-h-screen bg-gray-50">
+  return <div className="min-h-screen bg-gray-50">
       <Navigation />
       
       <main className="pt-16 py-0">
         {/* Hero Section */}
-        <section 
-          className="py-20 overflow-hidden"
-          style={{
-            backgroundImage: 'url(/lovable-uploads/b2edc674-2040-471a-a14e-fa728cbeb7a7.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
+        <section className="py-20 overflow-hidden" style={{
+        backgroundImage: 'url(/lovable-uploads/b2edc674-2040-471a-a14e-fa728cbeb7a7.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
           {/* Background decorative elements */}
           <div className="absolute top-10 left-10 w-16 h-16 opacity-20">
             
@@ -72,13 +67,13 @@ const Experiences = () => {
           </div>
           
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span className="text-blue-500 text-sm font-medium mb-4 block">OUR SERVICES</span>
+            <span className="text-sm font-medium mb-4 block text-cyan-500">OUR SERVICES</span>
             <h1 className="text-5xl font-bold text-gray-900 mb-8">Elevate your Experience</h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
               We stand apart by focusing on personalized concierge experiences tailored to each residential 
               property needs. Discover how our services complement and enhance a customer service.
             </p>
-            <button className="bg-blue-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors">
+            <button className="text-white px-8 py-3 rounded-lg font-medium transition-colors bg-sky-500 hover:bg-sky-400">
               Contact Us
             </button>
           </div>
@@ -211,8 +206,6 @@ const Experiences = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Experiences;
