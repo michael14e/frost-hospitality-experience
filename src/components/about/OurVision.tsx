@@ -1,5 +1,3 @@
-
-
 const OurVision = () => {
   const visionPoints = [
     "Simplify Process",
@@ -11,7 +9,7 @@ const OurVision = () => {
 
   return (
     <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url('/lovable-uploads/055abacd-a38e-47b9-a680-bc82bb14c5e2.png')`
+      backgroundImage: `url('/lovable-uploads/1dc5281f-df03-4ae7-984f-33c877b0b13a.png')`
     }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -66,4 +64,3 @@ const OurVision = () => {
 };
 
 export default OurVision;
-
