@@ -3,7 +3,7 @@ const WhoWeAre = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl">
           <div className="mb-8">
-            <p className="text-blue-600 font-medium mb-2">About Us</p>
+            <p className="font-medium mb-2 text-cyan-500">About Us</p>
             <h2 className="text-5xl font-bold text-gray-900 mb-8">Who We Are</h2>
           </div>
           <div className="space-y-6">
