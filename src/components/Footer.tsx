@@ -1,8 +1,9 @@
 
-
 import { Mail } from 'lucide-react';
+
 const Footer = () => {
-  return <footer className="pt-24 pb-8 relative overflow-hidden bg-white">
+  return (
+    <footer className="pt-24 pb-8 relative overflow-hidden bg-white">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-32 h-32 opacity-5">
         <svg viewBox="0 0 24 24" fill="currentColor" className="text-blue-300 w-full h-full bg-slate-50">
@@ -16,74 +17,6 @@ const Footer = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Contact Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          <div>
-            <span className="text-blue-400 text-sm font-medium">Contact Info</span>
-            <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-2">
-              Let's connect.
-            </h2>
-            <p className="text-2xl text-gray-900 mb-8">
-              We'd love to hear from you!
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex items-start space-x-3">
-              <img src="/lovable-uploads/9260ad39-05fb-4c9f-9c08-efba56d76ec9.png" alt="Phone" className="w-6 h-6 mt-1" />
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Call us</h3>
-                <p className="text-gray-600">757-800-5289</p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-3">
-              <img src="/lovable-uploads/6cfcd3a8-bffe-4fa1-a708-d706d36c6912.png" alt="Message" className="w-6 h-6 mt-1" />
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Message us</h3>
-                <p className="text-gray-600">fhe@frostlifestyle.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Newsletter Section */}
-        <div style={{
-        backgroundImage: 'url(/lovable-uploads/c9020f5c-be55-4fae-8f7a-078172edeec4.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }} className="rounded-lg p-8 mb-16 relative overflow-hidden px-[40px]">
-          <div className="flex items-center justify-between">
-            <div className="max-w-md">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Sign up for our newsletter
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Be the first to know about releases and industry news and insights.
-              </p>
-            </div>
-            
-            <div className="flex-shrink-0">
-              <div className="flex">
-                <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent w-80" />
-                <button className="bg-gray-800 text-white px-6 py-2 rounded-r-lg hover:bg-gray-700 transition-colors">
-                  Subscribe
-                </button>
-              </div>
-              <p className="text-xs text-gray-500 mt-2">
-                We care about your data in our privacy policy.
-              </p>
-            </div>
-          </div>
-          
-          <div className="absolute right-8 bottom-8 w-16 h-16 opacity-10">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="text-blue-300 w-full h-full">
-              <path d="M12 2L13.09 8.26L18 7L14.74 12L18 17L13.09 15.74L12 22L10.91 15.74L6 17L9.26 12L6 7L10.91 8.26L12 2Z" />
-            </svg>
-          </div>
-        </div>
-
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
@@ -125,7 +58,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
-export default Footer;
 
+export default Footer;
