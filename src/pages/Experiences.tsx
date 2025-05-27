@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+
 const Experiences = () => {
   const lifestyleServices = [{
     icon: "👥",
@@ -47,12 +48,21 @@ const Experiences = () => {
     title: "Onboard Vendor",
     description: "Facilitate smooth transition and integration. Begin collaborative work on agreed-upon terms with ongoing support."
   }];
-  return <div className="min-h-screen bg-gray-50">
+  return (
+    <div className="min-h-screen bg-gray-50">
       <Navigation />
       
       <main className="pt-16 py-0">
         {/* Hero Section */}
-        <section className="py-20  overflow-hidden">
+        <section 
+          className="py-20 overflow-hidden"
+          style={{
+            backgroundImage: 'url(/lovable-uploads/b2edc674-2040-471a-a14e-fa728cbeb7a7.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
           {/* Background decorative elements */}
           <div className="absolute top-10 left-10 w-16 h-16 opacity-20">
             
@@ -201,6 +211,8 @@ const Experiences = () => {
       </main>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Experiences;
