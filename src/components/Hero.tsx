@@ -1,5 +1,12 @@
+
 const Hero = () => {
-  return <section className="bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
+  return <section className="relative overflow-hidden" style={{
+    backgroundImage: 'url(/lovable-uploads/6c0fe62b-a5df-4a99-83f9-b6b481976387.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    minHeight: '120vh'
+  }}>
       {/* Background decorative elements */}
       <div className="absolute top-10 left-10 w-32 h-32 opacity-10">
         <svg viewBox="0 0 24 24" fill="currentColor" className="text-blue-200 w-full h-full">
