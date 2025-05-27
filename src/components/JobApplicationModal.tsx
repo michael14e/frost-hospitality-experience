@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { X, Upload } from 'lucide-react';
+import { toast } from 'sonner';
+
 interface JobApplicationModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -40,7 +42,23 @@ const JobApplicationModal = ({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Handle form submission here
+    
+    // Show success toast
+    toast('Application submitted successfully!', {
+      description: 'We will review your application and get back to you soon.',
+      position: 'bottom-right',
+      duration: 3000,
+    });
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+      resume: null
+    });
+    
+    // Close the modal
     onClose();
   };
   return <Dialog open={isOpen} onOpenChange={onClose}>
