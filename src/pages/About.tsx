@@ -13,17 +13,13 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
-      <main className="pt-16">
-        <AboutHero />
-        <WhoWeAre />
-        <OurVision />
-        <WhyChooseFrost />
-        <InstagramSection />
-        <TeamMembers />
-        <ConnectWithUs />
-      </main>
-
+      <AboutHero />
+      <WhoWeAre />
+      <OurVision />
+      <WhyChooseFrost />
+      <InstagramSection />
+      <TeamMembers />
+      <ConnectWithUs />
       <Footer />
     </div>
   );

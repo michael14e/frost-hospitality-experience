@@ -22,21 +22,20 @@ const Careers = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <main className="pt-16">
-        <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: 'url(/lovable-uploads/34ad03b7-cebf-42f0-b609-6dc64a0d627b.png)'
-        }}>
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: 'url(/lovable-uploads/34ad03b7-cebf-42f0-b609-6dc64a0d627b.png)'
+      }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-8">Join Our Team</h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Be part of a team that's dedicated to creating exceptional experiences and touching lives. 
               To join us, please contact us for more information.
             </p>
           </div>
-        </section>
+      </section>
 
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Current Openings</h2>
             
             <div className="max-w-4xl mx-auto">
@@ -70,8 +69,7 @@ const Careers = () => {
 
             
           </div>
-        </section>
-      </main>
+      </section>
 
       <ConnectWithUs />
       <Footer />

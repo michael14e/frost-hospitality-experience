@@ -10,14 +10,10 @@ const Experiences = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
-      
-      <main className="pt-16">
-        <ExperiencesHero />
-        <StandardExperience />
-        <LifestyleTeam />
-        <ExperiencesBusinessProcess />
-      </main>
-
+      <ExperiencesHero />
+      <StandardExperience />
+      <LifestyleTeam />
+      <ExperiencesBusinessProcess />
       <Footer />
     </div>
   );

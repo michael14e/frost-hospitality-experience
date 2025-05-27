@@ -9,8 +9,7 @@ const Contact = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <main className="pt-16">
-        <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
+      <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: 'url(/lovable-uploads/5067fe7b-8ed7-49ea-8ad6-19033bcf23b2.png)'
       }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -73,7 +72,7 @@ const Contact = () => {
           </div>
         </section>
 
-        <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
+      <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: 'url(/lovable-uploads/c4445486-d6a2-47bc-95cf-d330aa78d1de.png)'
       }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
