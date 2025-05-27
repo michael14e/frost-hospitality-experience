@@ -1,4 +1,13 @@
+
+import { useNavigate } from 'react-router-dom';
+
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleExploreClick = () => {
+    navigate('/experiences');
+  };
+
   return <section className="relative overflow-hidden" style={{
     backgroundImage: 'url(/lovable-uploads/98b70d22-72a6-4ebe-985d-1d71b804753e.png)',
     backgroundSize: 'cover',
@@ -29,7 +38,10 @@ const Hero = () => {
               We believe life's finest moments are meant to be savored. We are here to inspire, uplift, and show that it's okay to expect the best. Every experience we create is crafted to leave a lasting impression—because memories made with us are memories that last a lifetime.
             </p>
             
-            <button className="text-white px-8 py-3 rounded-lg font-medium transition-colors bg-[4AB4E6] bg-sky-500 hover:bg-sky-400">
+            <button 
+              onClick={handleExploreClick}
+              className="text-white px-8 py-3 rounded-lg font-medium transition-colors bg-[4AB4E6] bg-sky-500 hover:bg-sky-400"
+            >
               Explore
             </button>
           </div>
@@ -49,7 +61,7 @@ const Hero = () => {
             it is okay to expect the best life has to offer.
           </p>
           
-          <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-cyan-500">Experiences make memories and memories 
+          <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-cyan-500">Experiences make memories and memories 
 last a lifetime.</h2>
         </div>
       </div>
