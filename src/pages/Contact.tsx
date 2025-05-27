@@ -1,8 +1,12 @@
+
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import FAQSection from '@/components/FAQSection';
 import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
+
 const Contact = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
       
       <main className="pt-16 py-0">
@@ -144,7 +148,10 @@ const Contact = () => {
         </section>
       </main>
 
+      <FAQSection />
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Contact;
