@@ -36,41 +36,9 @@ To join us, please contact us for more information.</p>
           </div>
         </section>
 
+        
+
         <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Work With Us?</h2>
-                <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  At Frost Hospitality Experience, we believe that our team members are our greatest asset. 
-                  We're committed to providing a work environment where you can grow, learn, and make a meaningful impact.
-                </p>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Join us in creating experiences that make memories and memories that last a lifetime.
-                </p>
-              </div>
-              <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop&crop=center" alt="Team collaboration" className="w-full h-full object-cover" />
-              </div>
-            </div>
-
-            <div className="mb-16">
-              <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Benefits & Perks</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {benefits.map((benefit, index) => <div key={index} className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
-                    <div className="w-5 h-5 mt-0.5 text-blue-400">
-                      <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-                        <path d="M12 2L13.09 8.26L18 7L14.74 12L18 17L13.09 15.74L12 22L10.91 15.74L6 17L9.26 12L6 7L10.91 8.26L12 2Z" />
-                      </svg>
-                    </div>
-                    <span className="text-gray-700 text-sm leading-relaxed">{benefit}</span>
-                  </div>)}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Current Openings</h2>
             <div className="space-y-8">
