@@ -1,12 +1,19 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
+
 const Contact = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
       
       <main className="pt-16 py-0">
-        <section className="bg-gray-50 py-20">
+        <section 
+          className="py-20 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/lovable-uploads/a76a9ea7-bf1b-4e64-83ea-de4cbb60ac39.png)'
+          }}
+        >
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {/* Contact Info Badge */}
             <div className="inline-block mb-8">
@@ -180,6 +187,8 @@ const Contact = () => {
       </main>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Contact;
