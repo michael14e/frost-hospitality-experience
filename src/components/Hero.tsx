@@ -45,7 +45,7 @@ const Hero = () => {
           {/* Right side - Image */}
           <div className="relative">
             <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-              <img alt="Professional hospitality service" className="w-full h-full object-cover" src="/lovable-uploads/7a001561-348d-40d1-aac5-2f29c7494779.png" />
+              <img alt="Professional hospitality service" src="/lovable-uploads/7a001561-348d-40d1-aac5-2f29c7494779.png" className="w-full h-full object-cover rounded-tr-64px rounded-bl-64px" />
             </div>
           </div>
         </div>
