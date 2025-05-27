@@ -12,7 +12,7 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Services */}
-          <div className="bg-white rounded-lg p-8 shadow-lg">
+          <div className="bg-white rounded-lg p-8 shadow-lg fill-container">
             <div className="mb-6">
               <span className="text-sm font-medium text-cyan-500">Our Services</span>
               <h3 className="text-3xl font-bold text-gray-900 mt-2">
