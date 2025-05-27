@@ -1,3 +1,4 @@
+
 const ServicesSection = () => {
   const services = ["Handling prospective residents", "Package management", "Checking in vendors", "Assisting maintenance request", "Tidying up coffee/tea bar", "Amenity upkeep and management", "Upholding the Overall well-being of the community", "Assisting with the everyday needs of our wonderful residents"];
   return <section className="py-20 relative overflow-hidden" style={{
@@ -21,12 +22,14 @@ const ServicesSection = () => {
           
           <div className="space-y-4">
             {services.map((service, index) => <div key={index} className="flex items-start space-x-3">
-                <div className="w-5 h-5 mt-0.5 text-blue-400">
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-                    <path d="M12 2L13.09 8.26L18 7L14.74 12L18 17L13.09 15.74L12 22L10.91 15.74L6 17L9.26 12L6 7L10.91 8.26L12 2Z" />
-                  </svg>
+                <div className="w-5 h-5 mt-0.5">
+                  <img 
+                    src="/lovable-uploads/c6d94a75-4654-4935-8dec-842c3393c95a.png" 
+                    alt="Service icon" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <span className="text-gray-700 text-sm leading-relaxed">{service}</span>
+                <span className="text-gray-700 text-lg leading-relaxed">{service}</span>
               </div>)}
           </div>
         </div>
