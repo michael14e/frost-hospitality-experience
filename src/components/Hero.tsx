@@ -7,9 +7,7 @@ const Hero = () => {
     minHeight: '110vh'
   }}>
       {/* Background decorative elements */}
-      <div className="absolute top-10 left-10 w-32 h-32 opacity-10">
-        
-      </div>
+      
       <div className="absolute bottom-10 right-10 w-24 h-24 opacity-10">
         <svg viewBox="0 0 24 24" fill="currentColor" className="text-blue-200 w-full h-full">
           <path d="M12 2L13.09 8.26L18 7L14.74 12L18 17L13.09 15.74L12 22L10.91 15.74L6 17L9.26 12L6 7L10.91 8.26L12 2Z" />
