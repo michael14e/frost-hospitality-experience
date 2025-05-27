@@ -41,9 +41,12 @@ const Navigation = () => {
 
           {/* Join Us Button */}
           <div className="hidden md:block">
-            <button className="bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition-colors">
+            <a
+              href="/careers"
+              className="bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition-colors"
+            >
               Join Us
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -71,9 +74,13 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="w-full mt-4 bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition-colors">
+              <a
+                href="/careers"
+                className="w-full mt-4 bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition-colors block text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Join Us
-              </button>
+              </a>
             </div>
           </div>
         )}
