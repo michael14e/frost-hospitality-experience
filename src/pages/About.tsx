@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -17,12 +16,11 @@ const About = () => {
           <div className="relative h-96 bg-gradient-to-br from-blue-50 to-white overflow-hidden">
             <div className="absolute inset-0">
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=400&fit=crop&crop=center"
+                src="/lovable-uploads/85bdcafe-b6d0-466d-87b7-026a97009eec.png"
                 alt="Modern building"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 bg-white/70"></div>
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
               <div className="text-center w-full">
                 <h1 className="text-5xl font-bold text-gray-900 mb-4">All About</h1>
@@ -213,14 +211,14 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=400&fit=crop&crop=center"
+                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=400&fit=crop&crop=face"
                   alt="Instagram post 1"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=400&fit=crop&crop=center"
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=400&fit=crop&crop=face"
                   alt="Instagram post 2"
                   className="w-full h-full object-cover"
                 />
