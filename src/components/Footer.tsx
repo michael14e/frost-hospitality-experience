@@ -39,7 +39,7 @@ const Footer = () => {
               <MessageCircle className="w-6 h-6 text-blue-400 mt-1" />
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Message us</h3>
-                <p className="text-gray-600">hi@frostlifestyle.com</p>
+                <p className="text-gray-600">fhe@frostlifestyle.com</p>
               </div>
             </div>
           </div>
