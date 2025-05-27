@@ -117,7 +117,7 @@ const JobApplicationModal = ({
 
           {/* Right side - Application Form */}
           <div className="w-96 bg-gray-50 p-8">
-            <h3 className="text-2xl font-bold text-blue-500 mb-6">Apply Now</h3>
+            <h3 className="text-2xl font-bold mb-6 text-cyan-500">Apply Now</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -137,18 +137,18 @@ const JobApplicationModal = ({
 
               <div>
                 <Label htmlFor="resume" className="text-gray-700 font-medium mb-2 block">Resume</Label>
-                <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 transition-colors">
+                <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-sky-400 transition-colors">
                   <input id="resume" type="file" onChange={handleFileChange} accept=".pdf,.doc,.docx" className="hidden" />
                   <label htmlFor="resume" className="cursor-pointer">
                     <Upload className="w-6 h-6 text-blue-500 mx-auto mb-2" />
-                    <p className="text-blue-500 font-medium">Browse or drag and drop</p>
+                    <p className="font-medium text-sky-500">Browse or drag and drop</p>
                     <p className="text-xs text-gray-500 mt-1">Max. file size: 4mb (pdf, doc, docx)</p>
                   </label>
                   {formData.resume && <p className="mt-2 text-sm text-gray-600">Selected: {formData.resume.name}</p>}
                 </div>
               </div>
 
-              <Button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-medium">
+              <Button type="submit" className="w-full text-white py-3 rounded-lg font-medium bg-sky-500 hover:bg-sky-400">
                 Submit
               </Button>
             </form>
