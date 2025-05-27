@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
@@ -75,7 +74,12 @@ const Contact = () => {
           </div>
         </section>
 
-        <section className="py-20 bg-white">
+        <section 
+          className="py-20 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/lovable-uploads/c4445486-d6a2-47bc-95cf-d330aa78d1de.png)'
+          }}
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Information */}
@@ -131,7 +135,7 @@ const Contact = () => {
               </div>
 
               {/* Contact Form */}
-              <div className="bg-gray-50 rounded-lg p-8">
+              <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
