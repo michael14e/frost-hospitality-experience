@@ -1,7 +1,5 @@
-
 const ConnectWithUs = () => {
-  return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
+  return <section className="py-20 bg-gradient-to-br from-blue-50 to-white bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -17,16 +15,10 @@ const ConnectWithUs = () => {
             </button>
           </div>
           <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=400&fit=crop&crop=center"
-              alt="Handshake"
-              className="w-full h-full object-cover"
-            />
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=400&fit=crop&crop=center" alt="Handshake" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ConnectWithUs;
