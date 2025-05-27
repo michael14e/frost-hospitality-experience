@@ -132,7 +132,12 @@ const Experiences = () => {
               </div>
 
               {/* Service Cards */}
-              {lifestyleServices.map((service, index) => <div key={index} className="bg-gradient-to-br from-cyan-400 to-cyan-500 text-white p-6 rounded-lg">
+              {lifestyleServices.map((service, index) => <div key={index} className="text-white p-6 rounded-lg" style={{
+                  backgroundImage: 'url(/lovable-uploads/c86d78a9-9d1a-4870-bde9-9b3158cf8411.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}>
                   <div className="flex items-start mb-4">
                     <div className="w-8 h-8 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
                       <span className="text-xl">{service.icon}</span>
