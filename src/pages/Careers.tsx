@@ -26,10 +26,12 @@ const Careers = () => {
       <Navigation />
       
       <main className="pt-16 py-0">
-        <section className="py-20 bg-cyan-50">
+        <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: 'url(/lovable-uploads/98d1d9b6-675e-4a2a-b6d8-4c89ebcab184.png)'
+      }}>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-8">Join Our Team</h1>
-            <p className="text-xl text-gray-600 leading-relaxed">Be part of a team that's dedicated to creating exceptional experiences and touching lives. 
+            <p className="text-xl text-gray-600 leading-relaxed">Be part of a team that's dedicated to creating exceptional experiences and touching lives. 
 To join us, please contact us for more information.</p>
           </div>
         </section>
