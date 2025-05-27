@@ -133,11 +133,11 @@ const Experiences = () => {
 
               {/* Service Cards */}
               {lifestyleServices.map((service, index) => <div key={index} className="text-white p-6 rounded-lg" style={{
-                  backgroundImage: 'url(/lovable-uploads/c86d78a9-9d1a-4870-bde9-9b3158cf8411.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}>
+              backgroundImage: 'url(/lovable-uploads/c86d78a9-9d1a-4870-bde9-9b3158cf8411.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}>
                   <div className="flex items-start mb-4">
                     <div className="w-8 h-8 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
                       <img src={service.icon} alt="" className="w-6 h-6" />
@@ -159,7 +159,7 @@ const Experiences = () => {
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
                 Our Business Process
               </h2>
-              <div className="w-16 h-1 bg-blue-500"></div>
+              <div className="w-16 h-1 bg-cyan-500"></div>
             </div>
 
             <div className="space-y-16">
