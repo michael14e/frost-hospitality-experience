@@ -52,17 +52,13 @@ const Experiences = () => {
       
       <main className="pt-16 py-0">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
+        <section className="py-20  overflow-hidden">
           {/* Background decorative elements */}
           <div className="absolute top-10 left-10 w-16 h-16 opacity-20">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="text-blue-400 w-full h-full">
-              <path d="M12 2L13.09 8.26L18 7L14.74 12L18 17L13.09 15.74L12 22L10.91 15.74L6 17L9.26 12L6 7L10.91 8.26L12 2Z" />
-            </svg>
+            
           </div>
           <div className="absolute top-20 right-20 w-20 h-20 opacity-15">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="text-blue-400 w-full h-full">
-              <path d="M12 2L13.09 8.26L18 7L14.74 12L18 17L13.09 15.74L12 22L10.91 15.74L6 17L9.26 12L6 7L10.91 8.26L12 2Z" />
-            </svg>
+            
           </div>
           
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
