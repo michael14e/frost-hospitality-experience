@@ -1,6 +1,6 @@
 import { Phone, MessageCircle, Mail } from 'lucide-react';
 const Footer = () => {
-  return <footer className="pb-8 relative overflow-hidden bg-slate-50">
+  return <footer className="pt-24 pb-8 relative overflow-hidden bg-white">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-32 h-32 opacity-5">
         <svg viewBox="0 0 24 24" fill="currentColor" className="text-blue-300 w-full h-full bg-slate-50">
