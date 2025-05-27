@@ -1,11 +1,11 @@
-
 import { useNavigate } from 'react-router-dom';
+import { navigateWithScroll } from '../utils/navigation';
 
 const Hero = () => {
   const navigate = useNavigate();
 
   const handleExploreClick = () => {
-    navigate('/experiences');
+    navigateWithScroll(navigate, '/experiences');
   };
 
   return <section className="relative overflow-hidden" style={{

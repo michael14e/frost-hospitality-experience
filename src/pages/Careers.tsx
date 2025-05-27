@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import JobApplicationModal from '@/components/JobApplicationModal';
@@ -6,6 +7,7 @@ import ConnectWithUs from '@/components/about/ConnectWithUs';
 import { MapPin, Clock, DollarSign } from 'lucide-react';
 
 const Careers = () => {
+  useDocumentTitle('Careers - Frost Hospitality');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const jobOpening = {

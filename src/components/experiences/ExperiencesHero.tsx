@@ -1,11 +1,11 @@
-
 import { useNavigate } from 'react-router-dom';
+import { navigateWithScroll } from '../../utils/navigation';
 
 const ExperiencesHero = () => {
   const navigate = useNavigate();
 
   const handleContactClick = () => {
-    navigate('/contact');
+    navigateWithScroll(navigate, '/contact');
   };
 
   return (

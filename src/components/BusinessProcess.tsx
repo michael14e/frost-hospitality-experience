@@ -1,6 +1,6 @@
-
 import { Users, MessageSquare, FileText, Building, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { navigateWithScroll } from '../utils/navigation';
 
 const BusinessProcess = () => {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ const BusinessProcess = () => {
   }];
 
   const handleExperiencesClick = () => {
-    navigate('/experiences');
+    navigateWithScroll(navigate, '/experiences');
   };
 
   return <section className="py-20 bg-cyan-50">
