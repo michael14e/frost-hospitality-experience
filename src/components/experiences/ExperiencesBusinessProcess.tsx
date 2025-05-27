@@ -62,7 +62,7 @@ const ExperiencesBusinessProcess = () => {
                   {/* Image - Left Side */}
                   <div className="order-2 lg:order-1">
                     <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
-                      <img src={process.image} alt={process.title} className="w-full h-full object-cover" />
+                      <img src={process.image} alt={process.title} className="w-full h-full object-cover bg-white" />
                     </div>
                   </div>
                   
