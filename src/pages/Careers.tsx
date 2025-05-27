@@ -1,13 +1,10 @@
-
 import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import JobApplicationModal from '@/components/JobApplicationModal';
 import { MapPin, Clock, DollarSign } from 'lucide-react';
-
 const Careers = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const jobOpening = {
     title: "Concierge",
     location: "Austin, Texas",
@@ -15,26 +12,14 @@ const Careers = () => {
     salary: "$45,000 - $55,000",
     description: "We're looking for a dedicated and personable Concierge to join our team."
   };
-
-  const benefits = [
-    "Comprehensive health insurance",
-    "Dental and vision coverage", 
-    "401(k) with company match",
-    "Paid time off and holidays",
-    "Professional development opportunities",
-    "Flexible work arrangements",
-    "Employee wellness programs",
-    "Career advancement opportunities"
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const benefits = ["Comprehensive health insurance", "Dental and vision coverage", "401(k) with company match", "Paid time off and holidays", "Professional development opportunities", "Flexible work arrangements", "Employee wellness programs", "Career advancement opportunities"];
+  return <div className="min-h-screen">
       <Navigation />
       
       <main className="pt-16 py-0">
         <section className="py-20 bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: 'url(/lovable-uploads/12c80cb3-b942-4d54-b360-c7ef307eab0b.png)'
-        }}>
+        backgroundImage: 'url(/lovable-uploads/12c80cb3-b942-4d54-b360-c7ef307eab0b.png)'
+      }}>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-8">Join Our Team</h1>
             <p className="text-xl text-gray-600 leading-relaxed">
@@ -54,7 +39,7 @@ const Careers = () => {
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{jobOpening.title}</h3>
                     <div className="flex items-center gap-4 mt-2">
-                      <span className="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
+                      <span className="inline-block bg-blue-100 px-3 py-1 rounded-full text-sm font-medium text-sky-700">
                         • Customer Service
                       </span>
                       <div className="flex flex-wrap gap-4 text-sm text-gray-600">
@@ -69,10 +54,7 @@ const Careers = () => {
                       </div>
                     </div>
                   </div>
-                  <button 
-                    onClick={() => setIsModalOpen(true)}
-                    className="mt-4 lg:mt-0 bg-blue-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors"
-                  >
+                  <button onClick={() => setIsModalOpen(true)} className="mt-4 lg:mt-0 text-white px-8 py-3 rounded-lg font-medium transition-colors bg-sky-500 hover:bg-sky-400">
                     Apply here
                   </button>
                 </div>
@@ -94,13 +76,7 @@ const Careers = () => {
 
       <Footer />
       
-      <JobApplicationModal 
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        jobTitle={jobOpening.title}
-      />
-    </div>
-  );
+      <JobApplicationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} jobTitle={jobOpening.title} />
+    </div>;
 };
-
 export default Careers;
