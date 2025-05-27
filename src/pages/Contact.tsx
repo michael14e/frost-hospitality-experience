@@ -2,6 +2,7 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
+import ConnectWithUs from '@/components/about/ConnectWithUs';
 import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
 
 const Contact = () => {
@@ -149,6 +150,7 @@ const Contact = () => {
       </main>
 
       <FAQSection />
+      <ConnectWithUs />
       <Footer />
     </div>
   );
