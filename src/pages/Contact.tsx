@@ -9,12 +9,64 @@ const Contact = () => {
       <Navigation />
       
       <main className="pt-16">
-        <section className="bg-gradient-to-br from-blue-50 to-white py-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl font-bold text-gray-900 mb-8">Contact Us</h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              Ready to elevate your hospitality experience? We'd love to hear from you and discuss how we can help.
+        <section className="bg-gray-50 py-20">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            {/* Contact Info Badge */}
+            <div className="inline-block mb-8">
+              <span className="px-6 py-2 bg-white text-blue-400 rounded-full text-sm font-medium border border-blue-200">
+                CONTACT INFO
+              </span>
+            </div>
+            
+            {/* Main Heading */}
+            <h1 className="text-6xl font-bold text-gray-900 mb-6">Join Together</h1>
+            
+            {/* Subtitle */}
+            <p className="text-xl text-gray-600 mb-16 max-w-4xl mx-auto">
+              Be part of something bigger. When we join together, we create a community where ideas flourish and success is shared.
             </p>
+            
+            {/* Contact Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {/* 24/7 Service Card */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <Phone className="w-8 h-8 text-blue-400" />
+                </div>
+                <h3 className="text-gray-900 font-semibold mb-2">24/7 Service</h3>
+                <p className="text-blue-400 font-medium mb-4">Call us on</p>
+                <div className="text-gray-600">
+                  <p className="font-medium">Mobile</p>
+                  <p>737-600-5289</p>
+                </div>
+              </div>
+              
+              {/* Drop a mail Card */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <MessageCircle className="w-8 h-8 text-blue-400" />
+                </div>
+                <h3 className="text-gray-900 font-semibold mb-2">Drop a mail</h3>
+                <p className="text-blue-400 font-medium mb-4">Mail Address</p>
+                <div className="text-gray-600">
+                  <p className="font-medium">Email Address</p>
+                  <p>fhe@frostlifestyle.com</p>
+                </div>
+              </div>
+              
+              {/* Office Hours Card */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <Clock className="w-8 h-8 text-blue-400" />
+                </div>
+                <h3 className="text-gray-900 font-semibold mb-2">Office Hours</h3>
+                <p className="text-blue-400 font-medium mb-4">Opening Time</p>
+                <div className="text-gray-600">
+                  <p className="font-medium">Sat-Sun:</p>
+                  <p>6 am - 7 pm</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
