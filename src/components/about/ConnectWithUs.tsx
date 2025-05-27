@@ -4,7 +4,7 @@ const ConnectWithUs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="mb-6">
-              <img src="/lovable-uploads/a4f9b0d7-9641-42a8-87f7-1940bae73a2f.png" alt="Frost Hospitality Experience Logo" className="w-16 h-16" />
+              <img src="/lovable-uploads/a4f9b0d7-9641-42a8-87f7-1940bae73a2f.png" alt="Frost Hospitality Experience Logo" className="w-32 h-16 object-contain" />
             </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Connect with us!</h2>
             <p className="text-lg text-gray-600 mb-8">
