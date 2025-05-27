@@ -25,7 +25,7 @@ const Careers = () => {
   return <div className="min-h-screen">
       <Navigation />
       
-      <main className="pt-16">
+      <main className="pt-16 py-0">
         <section className="py-20 bg-cyan-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-8">Join Our Team</h1>
