@@ -50,6 +50,18 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        
+        {/* Experience Section Content */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-20">
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            We are here to touch the lives of everyone around us and show them<br />
+            it is okay to expect the best life has to offer.
+          </p>
+          
+          <h2 className="text-4xl lg:text-5xl font-bold text-blue-400 leading-tight">
+            Experiences make memories and memories last a lifetime.
+          </h2>
+        </div>
       </div>
     </section>;
 };
