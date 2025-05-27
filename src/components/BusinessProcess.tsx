@@ -17,7 +17,7 @@ const BusinessProcess = () => {
     title: "Onboard Vendor",
     description: "Facilitate smooth transition and integration. Begin collaborative work on agreed-upon terms."
   }];
-  return <section className="py-20 bg-gray-50">
+  return <section className="py-20 bg-cyan-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-5xl font-bold text-gray-900 mb-4">
