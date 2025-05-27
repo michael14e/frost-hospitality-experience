@@ -1,32 +1,33 @@
 
+
 const ExperiencesBusinessProcess = () => {
   const businessProcesses = [
     {
       number: "01",
       title: "Build Relationships",
       description: "Initiate contact with property management. Establish a reliable partnership with stakeholders to ensure smooth operations, and create a welcoming and trustworthy environment to encourage repeat business and build rapport and understand their needs.",
-      image: "/lovable-uploads/29ab8710-7f56-4ba2-ab16-9d5131fd55c8.png",
+      image: "/lovable-uploads/ccf45900-1dcf-4301-8577-745f1a93bf03.png",
       imagePosition: "right"
     },
     {
       number: "02", 
       title: "Negotiate Agreement",
       description: "Reaching optimal terms, pricing, and services offered and establish agreements that ensure reliable service delivery and contribute to a superior partner experience while maintaining cost efficiency and operational effectiveness.",
-      image: "/lovable-uploads/29ab8710-7f56-4ba2-ab16-9d5131fd55c8.png",
+      image: "/lovable-uploads/4cbfe354-109e-4586-87c1-c074e9aa0ed8.png",
       imagePosition: "left"
     },
     {
       number: "03",
       title: "Sign Contract", 
       description: "Formalize agreement in a legally binding contract. It signifies the commitment between parties to deliver agreed-upon services and products. This formalizes the legal framework for the partnership, detailing pricing, timelines, responsibilities, and service standards and ensure all parties are satisfied with terms.",
-      image: "/lovable-uploads/29ab8710-7f56-4ba2-ab16-9d5131fd55c8.png",
+      image: "/lovable-uploads/f4f2f98a-7007-4873-8089-6d8ce2406fe9.png",
       imagePosition: "right"
     },
     {
       number: "04",
       title: "Onboard Vendor",
       description: "Essential for building effective partnerships that enhance service delivery. Facilitate smooth transition and integration. Begin collaborative work on agreed-upon terms.",
-      image: "/lovable-uploads/29ab8710-7f56-4ba2-ab16-9d5131fd55c8.png", 
+      image: "/lovable-uploads/9a23285f-47f9-4060-9655-b0043d76e02d.png", 
       imagePosition: "left"
     }
   ];
@@ -107,3 +108,4 @@ const ExperiencesBusinessProcess = () => {
 };
 
 export default ExperiencesBusinessProcess;
+
