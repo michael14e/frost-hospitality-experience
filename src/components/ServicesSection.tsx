@@ -1,4 +1,3 @@
-
 const ServicesSection = () => {
   const services = ["Handling prospective residents", "Package management", "Checking in vendors", "Assisting maintenance request", "Tidying up coffee/tea bar", "Amenity upkeep and management", "Upholding the Overall well-being of the community", "Assisting with the everyday needs of our wonderful residents"];
   return <section className="py-20 relative overflow-hidden" style={{
@@ -12,7 +11,7 @@ const ServicesSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Services card now spans full width */}
-        <div className="bg-white rounded-lg p-8 shadow-lg w-full">
+        <div className="bg-white rounded-lg p-8 w-full">
           <div className="mb-6">
             <span className="text-sm font-medium text-cyan-500">Our Services</span>
             <h3 className="text-3xl font-bold text-gray-900 mt-2">
