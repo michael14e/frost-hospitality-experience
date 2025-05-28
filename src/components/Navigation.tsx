@@ -23,7 +23,7 @@ const Navigation = () => {
           <div className='flex items-center'>
             <div className='flex items-center space-x-2'>
               <div onClick={() => navigateWithScroll(navigate, '/')} className='cursor-pointer'>
-                <img src='/lovable-uploads/46b03407-4b85-45af-8054-059eaecca4a0.png' alt='Frost Hospitality Experience' className='h-12 cursor-pointer' />
+                <img src='/lovable-uploads/46b03407-4b85-45af-8054-059eaecca4a0.png' alt='Frost Hospitality Experience' className='h-14 cursor-pointer' />
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@ const Navigation = () => {
           <div className='hidden md:block'>
             <div className='ml-10 flex items-baseline space-x-8'>
               {navItems.map((item) => (
-                <div key={item.name} onClick={() => navigateWithScroll(navigate, item.href)} className='text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium transition-colors cursor-pointer'>
+                <div key={item.name} onClick={() => navigateWithScroll(navigate, item.href)} className='text-gray-600 hover:text-blue-500 px-3 py-2 text-lg font-medium transition-colors cursor-pointer'>
                   {item.name}
                 </div>
               ))}
