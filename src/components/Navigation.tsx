@@ -40,7 +40,10 @@ const Navigation = () => {
           </div>
 
           {/* Join Us Button */}
-          <div className='hidden md:block'>
+          <div className='hidden md:flex items-center space-x-3'>
+            <div onClick={() => navigateWithScroll(navigate, '/login')} className='border border-gray-800 text-gray-800 px-4 py-2 rounded text-sm font-medium hover:bg-gray-800 hover:text-white transition-colors cursor-pointer'>
+              Login
+            </div>
             <div onClick={() => navigateWithScroll(navigate, '/careers')} className='bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition-colors cursor-pointer'>
               Join Us
             </div>
@@ -70,14 +73,25 @@ const Navigation = () => {
                   {item.name}
                 </div>
               ))}
-              <div
-                onClick={() => {
-                  navigateWithScroll(navigate, '/careers');
-                  setIsMenuOpen(false);
-                }}
-                className='w-full mt-4 bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition-colors block text-center cursor-pointer'
-              >
-                Join Us
+              <div className='flex flex-col space-y-2 mt-4'>
+                <div
+                  onClick={() => {
+                    navigateWithScroll(navigate, '/login');
+                    setIsMenuOpen(false);
+                  }}
+                  className='w-full border border-gray-800 text-gray-800 px-4 py-2 rounded text-sm font-medium hover:bg-gray-800 hover:text-white transition-colors block text-center cursor-pointer'
+                >
+                  Login
+                </div>
+                <div
+                  onClick={() => {
+                    navigateWithScroll(navigate, '/careers');
+                    setIsMenuOpen(false);
+                  }}
+                  className='w-full bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition-colors block text-center cursor-pointer'
+                >
+                  Join Us
+                </div>
               </div>
             </div>
           </div>
