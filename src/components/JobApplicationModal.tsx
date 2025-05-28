@@ -134,29 +134,10 @@ const JobApplicationModal = ({ isOpen, onClose, job }: JobApplicationModalProps)
         publicKey: EMAILJS_CONFIG.PUBLIC_KEY,
       });
 
-      // Prepare template parameters
-      const templateParams = {
-        name: formData.name,
-        email: formData.email,
-        message: formData.message || 'No additional message provided.',
-        has_resume: formData.resume ? 'Yes' : 'No',
-        resume_filename: formData.resume ? formData.resume.name : 'No resume attached',
-        resume_size: formData.resume ? formatFileSize(formData.resume.size) : 'N/A',
-      };
-
-      // Send email with or without attachment
-      let result;
-      if (formData.resume) {
-        // Send with attachment using sendForm
-        result = await emailjs.sendForm(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.CAREER_TEMPLATE_ID, form.current, {
-          publicKey: EMAILJS_CONFIG.PUBLIC_KEY,
-        });
-      } else {
-        // Send without attachment using send
-        result = await emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.CAREER_TEMPLATE_ID, templateParams, {
-          publicKey: EMAILJS_CONFIG.PUBLIC_KEY,
-        });
-      }
+      // Send email using EmailJS sendForm (handles both with and without attachments)
+      const result = await emailjs.sendForm(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.CAREER_TEMPLATE_ID, form.current, {
+        publicKey: EMAILJS_CONFIG.PUBLIC_KEY,
+      });
 
       console.log('Job application sent successfully:', result);
 
@@ -250,8 +231,6 @@ const JobApplicationModal = ({ isOpen, onClose, job }: JobApplicationModalProps)
               <input type='hidden' name='job_title' value={job.title} />
               <input type='hidden' name='job_location' value={job.location} />
               <input type='hidden' name='job_type' value={job.type} />
-              <input type='hidden' name='application_type' value='Job Application' />
-              <input type='hidden' name='application_date' value={new Date().toLocaleDateString()} />
 
               <div>
                 <Label htmlFor='name' className='text-gray-700 font-medium mb-2 block'>
@@ -279,9 +258,11 @@ const JobApplicationModal = ({ isOpen, onClose, job }: JobApplicationModalProps)
                   Resume
                 </Label>
 
+                {/* Always include the file input for EmailJS to detect */}
+                <input ref={fileInputRef} id='resume' name='resume' type='file' onChange={handleFileChange} accept='.pdf,.doc,.docx' className='hidden' disabled={isSubmitting} />
+
                 {!formData.resume ? (
                   <div className='border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-sky-400 transition-colors'>
-                    <input ref={fileInputRef} id='resume' name='resume' type='file' onChange={handleFileChange} accept='.pdf,.doc,.docx' className='hidden' disabled={isSubmitting} />
                     <label htmlFor='resume' className={`cursor-pointer ${isSubmitting ? 'pointer-events-none opacity-50' : ''}`}>
                       <Upload className='w-6 h-6 text-blue-500 mx-auto mb-2' />
                       <p className='font-medium text-sky-500'>Browse or drag and drop</p>
@@ -298,9 +279,14 @@ const JobApplicationModal = ({ isOpen, onClose, job }: JobApplicationModalProps)
                           <p className='text-xs text-gray-500'>{formatFileSize(formData.resume.size)}</p>
                         </div>
                       </div>
-                      <Button type='button' variant='ghost' size='sm' onClick={handleRemoveFile} className='text-red-500 hover:text-red-700 hover:bg-red-50' disabled={isSubmitting}>
-                        <X className='w-4 h-4' />
-                      </Button>
+                      <div className='flex items-center space-x-2'>
+                        <Button type='button' variant='ghost' size='sm' onClick={() => fileInputRef.current?.click()} className='text-blue-500 hover:text-blue-700 hover:bg-blue-50' disabled={isSubmitting}>
+                          Change
+                        </Button>
+                        <Button type='button' variant='ghost' size='sm' onClick={handleRemoveFile} className='text-red-500 hover:text-red-700 hover:bg-red-50' disabled={isSubmitting}>
+                          <X className='w-4 h-4' />
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 )}

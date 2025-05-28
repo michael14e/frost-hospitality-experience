@@ -9,7 +9,7 @@ export const EMAILJS_CONFIG = {
 
   // Your EmailJS Template ID (from Email Templates page)
   NEWSLETTER_TEMPLATE_ID: 'template_kwad81k',
-  CONTACT_TEMPLATE_ID: 'template_kwad81k',
+  CONTACT_TEMPLATE_ID: 'template_gjy41vp',
   CAREER_TEMPLATE_ID: 'template_alnz64a',
 };
 
@@ -31,6 +31,10 @@ export const CAREER_EMAIL_TEMPLATE_PARAMS = {
   from_name: '{{name}}',
   from_email: '{{email}}',
   message: '{{message}}',
+  job_title: '{{job_title}}',
+  job_location: '{{job_location}}',
+  job_type: '{{job_type}}',
+  resume: '{{resume}}', // This is for the actual file attachment
   to_email: DEFAULT_TO_EMAIL, // Your receiving email
 };
 
