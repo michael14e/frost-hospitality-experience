@@ -1,0 +1,35 @@
+[
+  {
+    "id": "concierge-austin",
+    "title": "Concierge",
+    "location": "Austin, Texas",
+    "type": "Full-time",
+    "salary": "$45,000 - $55,000",
+    "category": "Customer Service",
+    "description": "We're looking for a dedicated and personable Concierge to join our team.",
+    "aboutPosition": "We are seeking a dedicated and personable Concierge to join our team in providing exceptional guest services at our community. The ideal candidate will have a passion for hospitality and a commitment to ensuring that every guest has a memorable experience. As the first point of contact for guests, the Concierge will play a vital role in enhancing guest relations and delivering outstanding customer service.",
+    "qualifications": ["Greet guests warmly upon arrival and assist with any resident needs.", "Provide information about hotel amenities, local attractions, and dining options.", "Make reservations for restaurants, transportation, and activities as requested by guests.", "Address guest inquiries and resolve any issues promptly and professionally.", "Maintain an organized front desk area and ensure all guest requests are logged accurately.", "Collaborate with other departments to fulfill special requests or accommodations for guests.", "Uphold high standards of phone etiquette when handling calls from guests or external parties.", "Assist in promoting community events and special residents incentives to enhance guest experience."]
+  },
+  {
+    "id": "housekeeping-supervisor-dallas",
+    "title": "Housekeeping Supervisor",
+    "location": "Dallas, Texas",
+    "type": "Full-time",
+    "salary": "$40,000 - $48,000",
+    "category": "Operations",
+    "description": "Join our team as a Housekeeping Supervisor to ensure the highest standards of cleanliness and guest satisfaction.",
+    "aboutPosition": "We are looking for an experienced Housekeeping Supervisor to oversee our housekeeping operations and maintain the exceptional standards our guests expect. The successful candidate will lead a team of housekeeping staff, ensure quality control, and contribute to creating a welcoming environment for all residents and guests.",
+    "qualifications": ["Supervise and coordinate daily housekeeping operations and staff schedules.", "Conduct regular inspections to ensure rooms and common areas meet quality standards.", "Train new housekeeping staff on proper cleaning procedures and safety protocols.", "Manage inventory of cleaning supplies and equipment.", "Handle guest requests and complaints related to housekeeping services.", "Maintain detailed records of room status and maintenance needs.", "Ensure compliance with health and safety regulations.", "Collaborate with other departments to coordinate guest services."]
+  },
+  {
+    "id": "maintenance-technician-houston",
+    "title": "Maintenance Technician",
+    "location": "Houston, Texas",
+    "type": "Full-time",
+    "salary": "$38,000 - $45,000",
+    "category": "Maintenance",
+    "description": "We're seeking a skilled Maintenance Technician to join our facilities team and ensure our properties are well-maintained.",
+    "aboutPosition": "As a Maintenance Technician, you will be responsible for the upkeep and repair of our residential community facilities. This role requires a hands-on approach to problem-solving and the ability to work independently while maintaining high standards of safety and quality. You'll play a crucial role in ensuring our residents enjoy a comfortable and well-maintained living environment.",
+    "qualifications": ["Perform routine maintenance and repairs on HVAC, plumbing, and electrical systems.", "Respond promptly to maintenance requests from residents and staff.", "Conduct regular inspections of building systems and equipment.", "Maintain accurate records of all maintenance activities and repairs.", "Ensure compliance with safety regulations and building codes.", "Assist with preventive maintenance programs and schedules.", "Coordinate with external contractors when specialized repairs are needed.", "Maintain cleanliness and organization of maintenance areas and equipment."]
+  }
+]
