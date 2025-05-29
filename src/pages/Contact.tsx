@@ -167,7 +167,7 @@ const Contact = () => {
             <div className='space-y-8 mb-12'>
               <div className='text-center md:text-left'>
                 <h2 className='text-3xl font-bold text-gray-900 mb-6'>Get in Touch</h2>
-                <p className='text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto md:mx-0'>We're here to answer your questions and help you create exceptional experiences. Reach out to us through any of the methods below.</p>
+                <p className='text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto md:mx-0'>We're here to answer your questions and help you create exceptional experiences. Reach out to us through any of the methods above.</p>
               </div>
             </div>
 
