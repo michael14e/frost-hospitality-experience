@@ -23,33 +23,49 @@ const Navigation = () => {
           <div className='flex items-center'>
             <div className='flex items-center space-x-2'>
               <div onClick={() => navigateWithScroll(navigate, '/')} className='cursor-pointer'>
-                <img 
-                  src='/lovable-uploads/FROST-LOGO-1.png' 
-                  alt='Frost Hospitality Experience' 
-                  className='h-10 md:h-14 w-auto object-contain max-w-full' 
-                  style={{ imageRendering: 'auto' }}
-                />
+                <img src='/lovable-uploads/FROST-LOGO-1.png' alt='Frost Hospitality Experience' className='h-8 sm:h-10 lg:h-14 w-auto object-contain max-w-full' style={{ imageRendering: 'auto' }} />
               </div>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className='hidden md:block'>
+          <div className='hidden lg:block'>
             <div className='ml-10 flex items-baseline space-x-8'>
               {navItems.map((item) => (
-                <div key={item.name} onClick={() => navigateWithScroll(navigate, item.href)} className='text-gray-600 hover:text-blue-500 px-3 py-2 text-lg font-medium transition-colors cursor-pointer'>
+                <div key={item.name} onClick={() => navigateWithScroll(navigate, item.href)} className='text-gray-600 hover:text-blue-500 px-3 py-2 text-lg font-medium transition-colors cursor-pointer whitespace-nowrap'>
                   {item.name}
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Join Us Button */}
-          <div className='hidden md:flex items-center space-x-3'>
-            <div onClick={() => navigateWithScroll(navigate, '/login')} className='border border-gray-800 text-gray-800 px-4 py-2 rounded text-sm font-medium hover:bg-gray-800 hover:text-white transition-colors cursor-pointer'>
+          {/* Tablet Navigation - Compact version */}
+          <div className='hidden md:flex lg:hidden items-center'>
+            <div className='flex items-baseline space-x-4'>
+              {navItems.map((item) => (
+                <div key={item.name} onClick={() => navigateWithScroll(navigate, item.href)} className='text-gray-600 hover:text-blue-500 px-2 py-2 text-sm font-medium transition-colors cursor-pointer whitespace-nowrap'>
+                  {item.name}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Desktop Buttons */}
+          <div className='hidden lg:flex items-center space-x-3'>
+            <div onClick={() => navigateWithScroll(navigate, '/login')} className='border border-gray-800 text-gray-800 px-4 py-2 rounded text-sm font-medium hover:bg-gray-800 hover:text-white transition-colors cursor-pointer whitespace-nowrap'>
               Login
             </div>
-            <div onClick={() => navigateWithScroll(navigate, '/careers')} className='bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition-colors cursor-pointer'>
+            <div onClick={() => navigateWithScroll(navigate, '/careers')} className='bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition-colors cursor-pointer whitespace-nowrap'>
+              Join Us
+            </div>
+          </div>
+
+          {/* Tablet Buttons - Compact version */}
+          <div className='hidden md:flex lg:hidden items-center space-x-2'>
+            <div onClick={() => navigateWithScroll(navigate, '/login')} className='border border-gray-800 text-gray-800 px-3 py-1.5 rounded text-xs font-medium hover:bg-gray-800 hover:text-white transition-colors cursor-pointer whitespace-nowrap'>
+              Login
+            </div>
+            <div onClick={() => navigateWithScroll(navigate, '/careers')} className='bg-gray-800 text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-gray-700 transition-colors cursor-pointer whitespace-nowrap'>
               Join Us
             </div>
           </div>
@@ -78,7 +94,7 @@ const Navigation = () => {
                   {item.name}
                 </div>
               ))}
-              <div className='flex flex-col space-y-2 mt-4'>
+              <div className='flex flex-col space-y-2 mt-4 px-3'>
                 <div
                   onClick={() => {
                     navigateWithScroll(navigate, '/login');
