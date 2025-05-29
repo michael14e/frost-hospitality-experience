@@ -37,23 +37,23 @@ const Footer = () => {
           </div>
 
           <div className='flex space-x-4 text-gray-400'>
-            <a href='#' className='hover:text-blue-500'>
+            {/* <a href='#' className='hover:text-blue-500'>
               <Facebook className='w-5 h-5' />
-            </a>
-            <a href='#' className='hover:text-blue-500'>
+            </a> */}
+            {/* <a href='#' className='hover:text-blue-500'>
               <Twitter className='w-5 h-5' />
-            </a>
+            </a> */}
             <a href='https://www.instagram.com/frosthospitalityexperience/' target='_blank' rel='noopener noreferrer' className='hover:text-blue-500'>
               <Instagram className='w-5 h-5' />
             </a>
-            <a href='#' className='hover:text-blue-500'>
+            {/* <a href='#' className='hover:text-blue-500'>
               <Linkedin className='w-5 h-5' />
-            </a>
+            </a> */}
           </div>
         </div>
 
         <div className='flex flex-col md:flex-row justify-between items-center mt-8 pt-8 border-t border-gray-200 text-sm text-gray-500'>
-          <p>© 2025 Frost Lifestyle Experience. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Frost Lifestyle Experience. All rights reserved.</p>
           <div className='flex space-x-6 mt-4 md:mt-0'>
             <div onClick={() => navigateWithScroll(navigate, '/terms')} className='hover:text-blue-500 cursor-pointer'>
               Terms
