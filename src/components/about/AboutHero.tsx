@@ -19,7 +19,7 @@ const AboutHero = () => {
         
         {/* Image below the heading */}
         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-          <img alt="Frost Hospitality Team" className="w-full h-auto object-cover" src="/lovable-uploads/team-hero.jpeg" />
+          <img alt="Frost Hospitality Team" className="w-full h-auto object-cover" src="/lovable-uploads/team-hero.png" />
         </div>
       </div>
     </section>;

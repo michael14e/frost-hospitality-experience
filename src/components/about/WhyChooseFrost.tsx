@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 
 const WhyChooseFrost = () => {
@@ -19,8 +18,8 @@ const WhyChooseFrost = () => {
       icon: "/lovable-uploads/f43b6d8b-9080-4def-9d02-db80f4605364.png"
     },
     {
-      title: "Experience and Trust",
-      description: "High standards: Our quality control is guaranteed excellence in every product/ service.",
+      title: "Quality Assurance",
+      description: "High standards: Our quality control is guaranteed excellence in every product/service.",
       icon: "/lovable-uploads/eb565e67-eaf9-4c0a-96ee-072e92bee1c7.png"
     },
     {
