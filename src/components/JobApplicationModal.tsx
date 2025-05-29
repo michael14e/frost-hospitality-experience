@@ -181,14 +181,14 @@ const JobApplicationModal = ({ isOpen, onClose, job }: JobApplicationModalProps)
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className='max-w-4xl max-h-[90vh] overflow-y-auto p-0'>
-        <div className='flex'>
-          {/* Left side - Job Details */}
-          <div className='flex-1 p-8 bg-white'>
-            <div className='flex items-center justify-between mb-6'>
+      <DialogContent className='max-w-[900px] max-h-[90vh] overflow-y-auto p-0 w-[95vw] 2xl:w-auto rounded-xl'>
+        <div className='flex flex-col lg:flex-row'>
+          {/* Job Details - Full width on mobile/tablet, left side on desktop */}
+          <div className='w-full lg:flex-1 p-4 sm:p-6 md:p-8 bg-white'>
+            <div className='flex items-start lg:items-center justify-between mb-4 md:mb-6'>
               <div>
-                <h2 className='text-2xl font-bold text-gray-900'>{job.title}</h2>
-                <div className='flex items-center gap-4 mt-2'>
+                <h2 className='text-xl sm:text-2xl font-bold text-gray-900'>{job.title}</h2>
+                <div className='flex flex-wrap items-center gap-2 sm:gap-4 mt-2'>
                   <span className='inline-block bg-sky-100 text-sky-600 px-3 py-1 rounded-full text-sm font-medium'>• {job.category}</span>
                   <span className='flex items-center text-gray-600 text-sm'>
                     <span className='w-2 h-2 bg-gray-400 rounded-full mr-2'></span>
@@ -197,23 +197,21 @@ const JobApplicationModal = ({ isOpen, onClose, job }: JobApplicationModalProps)
                   <span className='text-gray-600 text-sm'>{job.location}</span>
                 </div>
               </div>
-              <Button variant='ghost' size='icon' onClick={onClose} className='text-gray-400 hover:text-gray-600'>
-                <X className='h-6 w-6' />
-              </Button>
+              {/* Close button removed */}
             </div>
 
-            <div className='space-y-6'>
+            <div className='space-y-4 md:space-y-6'>
               <div>
-                <h3 className='text-xl font-bold text-gray-900 mb-4'>About the position</h3>
-                <p className='text-gray-600 leading-relaxed'>{job.aboutPosition}</p>
+                <h3 className='text-lg sm:text-xl font-bold text-gray-900 mb-2 md:mb-4'>About the position</h3>
+                <p className='text-sm sm:text-base text-gray-600 leading-relaxed'>{job.aboutPosition}</p>
               </div>
 
               <div>
-                <h3 className='text-xl font-bold text-gray-900 mb-4'>Qualifications</h3>
-                <ul className='space-y-3 text-gray-600'>
+                <h3 className='text-lg sm:text-xl font-bold text-gray-900 mb-2 md:mb-4'>Qualifications</h3>
+                <ul className='space-y-2 md:space-y-3 text-sm sm:text-base text-gray-600'>
                   {job.qualifications.map((qualification, index) => (
                     <li key={index} className='flex items-start'>
-                      <span className='w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                      <span className='w-2 h-2 bg-gray-400 rounded-full mt-1.5 mr-2 md:mr-3 flex-shrink-0'></span>
                       {qualification}
                     </li>
                   ))}
@@ -222,39 +220,41 @@ const JobApplicationModal = ({ isOpen, onClose, job }: JobApplicationModalProps)
             </div>
           </div>
 
-          {/* Right side - Application Form */}
-          <div className='w-96 bg-gray-50 p-8'>
-            <h3 className='text-2xl font-bold mb-6 text-cyan-500'>Apply Now</h3>
+          {/* Application Form - Full width on mobile/tablet, right side on desktop */}
+          <div className='w-full md:max-w-xl lg:max-w-none lg:w-96 mx-auto lg:mx-0 bg-gray-50 p-4 sm:p-6 md:p-8'>
+            <h3 className='text-xl sm:text-2xl font-bold mb-4 md:mb-6 text-cyan-500'>Apply Now</h3>
 
-            <form ref={form} onSubmit={handleSubmit} className='space-y-6'>
+            <form ref={form} onSubmit={handleSubmit} className='space-y-4 md:space-y-6'>
               {/* Hidden fields for job information */}
               <input type='hidden' name='job_title' value={job.title} />
               <input type='hidden' name='job_location' value={job.location} />
               <input type='hidden' name='job_type' value={job.type} />
 
-              <div>
-                <Label htmlFor='name' className='text-gray-700 font-medium mb-2 block'>
-                  Name *
-                </Label>
-                <Input id='name' name='name' value={formData.name} onChange={handleInputChange} placeholder='Enter your name' className='w-full' required disabled={isSubmitting} />
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                <div>
+                  <Label htmlFor='name' className='text-gray-700 font-medium mb-1 md:mb-2 block'>
+                    Name *
+                  </Label>
+                  <Input id='name' name='name' value={formData.name} onChange={handleInputChange} placeholder='Enter your name' className='w-full' required disabled={isSubmitting} />
+                </div>
+
+                <div>
+                  <Label htmlFor='email' className='text-gray-700 font-medium mb-1 md:mb-2 block'>
+                    E-mail Address *
+                  </Label>
+                  <Input id='email' name='email' type='email' value={formData.email} onChange={handleInputChange} placeholder='Enter your email' className='w-full' required disabled={isSubmitting} />
+                </div>
               </div>
 
               <div>
-                <Label htmlFor='email' className='text-gray-700 font-medium mb-2 block'>
-                  E-mail Address *
-                </Label>
-                <Input id='email' name='email' type='email' value={formData.email} onChange={handleInputChange} placeholder='Enter your email' className='w-full' required disabled={isSubmitting} />
-              </div>
-
-              <div>
-                <Label htmlFor='message' className='text-gray-700 font-medium mb-2 block'>
+                <Label htmlFor='message' className='text-gray-700 font-medium mb-1 md:mb-2 block'>
                   Message
                 </Label>
-                <textarea id='message' name='message' value={formData.message} onChange={handleInputChange} placeholder="Tell us why you're interested in this position..." rows={4} className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none disabled:bg-gray-100' disabled={isSubmitting} />
+                <textarea id='message' name='message' value={formData.message} onChange={handleInputChange} placeholder="Tell us why you're interested in this position..." rows={3} className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none disabled:bg-gray-100' disabled={isSubmitting} />
               </div>
 
               <div>
-                <Label htmlFor='resume' className='text-gray-700 font-medium mb-2 block'>
+                <Label htmlFor='resume' className='text-gray-700 font-medium mb-1 md:mb-2 block'>
                   Resume
                 </Label>
 
@@ -262,25 +262,25 @@ const JobApplicationModal = ({ isOpen, onClose, job }: JobApplicationModalProps)
                 <input ref={fileInputRef} id='resume' name='resume' type='file' onChange={handleFileChange} accept='.pdf,.doc,.docx' className='hidden' disabled={isSubmitting} />
 
                 {!formData.resume ? (
-                  <div className='border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-sky-400 transition-colors'>
+                  <div className='border-2 border-dashed border-gray-300 rounded-lg p-4 md:p-6 text-center hover:border-sky-400 transition-colors'>
                     <label htmlFor='resume' className={`cursor-pointer ${isSubmitting ? 'pointer-events-none opacity-50' : ''}`}>
-                      <Upload className='w-6 h-6 text-blue-500 mx-auto mb-2' />
-                      <p className='font-medium text-sky-500'>Browse or drag and drop</p>
+                      <Upload className='w-5 h-5 md:w-6 md:h-6 text-blue-500 mx-auto mb-1 md:mb-2' />
+                      <p className='font-medium text-sky-500 text-sm md:text-base'>Browse or drag and drop</p>
                       <p className='text-xs text-gray-500 mt-1'>Max. file size: 4MB (PDF, DOC, DOCX)</p>
                     </label>
                   </div>
                 ) : (
-                  <div className='border border-gray-300 rounded-lg p-4 bg-white'>
+                  <div className='border border-gray-300 rounded-lg p-3 md:p-4 bg-white'>
                     <div className='flex items-center justify-between'>
-                      <div className='flex items-center space-x-3'>
-                        <FileText className='w-8 h-8 text-blue-500' />
+                      <div className='flex items-center space-x-2 md:space-x-3'>
+                        <FileText className='w-6 h-6 md:w-8 md:h-8 text-blue-500' />
                         <div>
-                          <p className='font-medium text-gray-900 text-sm'>{formData.resume.name}</p>
+                          <p className='font-medium text-gray-900 text-xs md:text-sm truncate max-w-[150px] sm:max-w-[200px] md:max-w-xs'>{formData.resume.name}</p>
                           <p className='text-xs text-gray-500'>{formatFileSize(formData.resume.size)}</p>
                         </div>
                       </div>
-                      <div className='flex items-center space-x-2'>
-                        <Button type='button' variant='ghost' size='sm' onClick={() => fileInputRef.current?.click()} className='text-blue-500 hover:text-blue-700 hover:bg-blue-50' disabled={isSubmitting}>
+                      <div className='flex items-center space-x-1 md:space-x-2'>
+                        <Button type='button' variant='ghost' size='sm' onClick={() => fileInputRef.current?.click()} className='text-blue-500 hover:text-blue-700 hover:bg-blue-50 text-xs md:text-sm px-2 py-1' disabled={isSubmitting}>
                           Change
                         </Button>
                         <Button type='button' variant='ghost' size='sm' onClick={handleRemoveFile} className='text-red-500 hover:text-red-700 hover:bg-red-50' disabled={isSubmitting}>
@@ -292,12 +292,12 @@ const JobApplicationModal = ({ isOpen, onClose, job }: JobApplicationModalProps)
                 )}
 
                 <div className='mt-2 flex items-start space-x-2'>
-                  <AlertCircle className='w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0' />
-                  <p className='text-xs text-gray-600'>Supported formats: PDF, DOC, DOCX. Maximum file size: 4MB. Resume attachment is optional but recommended.</p>
+                  <AlertCircle className='w-3 h-3 md:w-4 md:h-4 text-amber-500 mt-0.5 flex-shrink-0' />
+                  <p className='text-xs text-gray-600'>Supported formats: PDF, DOC, DOCX. Maximum file size: 4MB.</p>
                 </div>
               </div>
 
-              <Button type='submit' disabled={isSubmitting} className='w-full text-white py-3 rounded-lg font-medium bg-sky-500 hover:bg-sky-400 disabled:bg-gray-400 disabled:cursor-not-allowed'>
+              <Button type='submit' disabled={isSubmitting} className='w-full text-white py-2 md:py-3 rounded-lg font-medium bg-sky-500 hover:bg-sky-400 disabled:bg-gray-400 disabled:cursor-not-allowed'>
                 {isSubmitting ? 'Submitting...' : 'Submit Application'}
               </Button>
             </form>
