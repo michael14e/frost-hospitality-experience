@@ -13,7 +13,12 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className='flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200'>
           <div className='flex items-center space-x-2 mb-4 md:mb-0'>
-            <img src='/lovable-uploads/c31e7116-252d-44f0-ac70-0494852bdc96.png' alt='Frost Hospitality Experience' className='h-12' />
+            <img 
+              src='/lovable-uploads/c31e7116-252d-44f0-ac70-0494852bdc96.png' 
+              alt='Frost Hospitality Experience' 
+              className='h-10 md:h-12 w-auto object-contain max-w-full' 
+              style={{ imageRendering: 'auto' }}
+            />
           </div>
 
           <div className='flex space-x-8 text-sm text-gray-600 mb-4 md:mb-0'>

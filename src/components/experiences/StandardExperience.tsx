@@ -38,10 +38,10 @@ const StandardExperience = () => {
             <div className="space-y-4">
               {services.map((service, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="w-5 h-5 mt-0.5 text-sky-500">
+                  <div className="w-5 h-5 mt-0.5 text-sky-500 flex items-center justify-center flex-shrink-0">
                     <Snowflake className="w-full h-full" />
                   </div>
-                  <span className="text-gray-700">{service}</span>
+                  <span className="text-gray-700 -mt-0.5">{service}</span>
                 </div>
               ))}
             </div>

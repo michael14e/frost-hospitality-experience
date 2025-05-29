@@ -54,13 +54,13 @@ const Careers = () => {
           <div className='max-w-4xl mx-auto space-y-6'>
             {jobOpenings.length > 0 ? (
               jobOpenings.map((job) => (
-                <div key={job.id} className='bg-white rounded-lg p-8 shadow-lg'>
-                  <div className='flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6'>
-                    <div>
-                      <h3 className='text-2xl font-bold text-gray-900 mb-2'>{job.title}</h3>
-                      <div className='flex items-center gap-4 mt-2'>
-                        <span className='inline-block bg-blue-100 px-3 py-1 rounded-full text-sm font-medium text-sky-700'>• {job.category}</span>
-                        <div className='flex flex-wrap gap-4 text-sm text-gray-600'>
+                <div key={job.id} className='bg-white rounded-lg p-4 sm:p-6 md:p-8 shadow-lg'>
+                  <div className='flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4 sm:mb-6'>
+                    <div className='w-full lg:w-auto'>
+                      <h3 className='text-xl sm:text-2xl font-bold text-gray-900 mb-2'>{job.title}</h3>
+                      <div className='flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-2'>
+                        <span className='inline-block bg-blue-100 px-3 py-1 rounded-full text-sm font-medium text-sky-700 w-fit'>• {job.category}</span>
+                        <div className='flex flex-wrap gap-2 sm:gap-4 text-sm text-gray-600 mt-2 sm:mt-0'>
                           <div className='flex items-center space-x-1'>
                             <Clock className='w-4 h-4' />
                             <span>{job.type}</span>
@@ -78,16 +78,16 @@ const Careers = () => {
                         </div>
                       </div>
                     </div>
-                    <button onClick={() => handleApplyClick(job)} className='mt-4 lg:mt-0 text-white px-8 py-3 rounded-lg font-medium transition-colors bg-sky-500 hover:bg-sky-400'>
+                    <button onClick={() => handleApplyClick(job)} className='mt-4 lg:mt-0 w-full sm:w-auto text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium transition-colors bg-sky-500 hover:bg-sky-400'>
                       Apply here
                     </button>
                   </div>
-                  <p className='text-gray-600 leading-relaxed'>{job.description}</p>
+                  <p className='text-gray-600 leading-relaxed text-sm sm:text-base'>{job.description}</p>
                 </div>
               ))
             ) : (
-              <div className='text-center py-12'>
-                <p className='text-gray-600 text-lg'>No job openings available at the moment.</p>
+              <div className='text-center py-8 sm:py-12'>
+                <p className='text-gray-600 text-base sm:text-lg'>No job openings available at the moment.</p>
                 <p className='text-gray-500 mt-2'>Please check back later for new opportunities.</p>
               </div>
             )}

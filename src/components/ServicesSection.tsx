@@ -20,16 +20,16 @@ const ServicesSection = () => {
             </h3>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col gap-4">
             {services.map((service, index) => <div key={index} className="flex items-start space-x-3">
-                <div className="w-5 h-5 mt-0.5">
+                <div className="w-5 h-5 mt-0.5 flex items-center justify-center flex-shrink-0">
                   <img 
                     src="/lovable-uploads/c6d94a75-4654-4935-8dec-842c3393c95a.png" 
                     alt="Service icon" 
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <span className="text-gray-700 text-lg leading-relaxed">{service}</span>
+                <span className="text-gray-700 text-lg leading-relaxed -mt-0.5 ">{service}</span>
               </div>)}
           </div>
         </div>
