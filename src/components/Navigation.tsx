@@ -24,7 +24,7 @@ const Navigation = () => {
             <div className='flex items-center space-x-2'>
               <div onClick={() => navigateWithScroll(navigate, '/')} className='cursor-pointer'>
                 <img 
-                  src='/lovable-uploads/46b03407-4b85-45af-8054-059eaecca4a0.png' 
+                  src='/lovable-uploads/FROST-LOGO-1.png' 
                   alt='Frost Hospitality Experience' 
                   className='h-10 md:h-14 w-auto object-contain max-w-full' 
                   style={{ imageRendering: 'auto' }}
