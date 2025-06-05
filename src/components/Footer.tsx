@@ -54,7 +54,7 @@ const Footer = () => {
 
         <div className='flex flex-col md:flex-row justify-between items-center mt-8 pt-8 border-t border-gray-200 text-sm text-gray-500'>
           <p>© {new Date().getFullYear()} Frost Lifestyle Experience. All rights reserved.</p>
-          <div className='flex space-x-6 mt-4 md:mt-0'>
+          {/* <div className='flex space-x-6 mt-4 md:mt-0'>
             <div onClick={() => navigateWithScroll(navigate, '/terms')} className='hover:text-blue-500 cursor-pointer'>
               Terms
             </div>
@@ -64,7 +64,7 @@ const Footer = () => {
             <div onClick={() => navigateWithScroll(navigate, '/cookies')} className='hover:text-blue-500 cursor-pointer'>
               Cookies
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
